@@ -1,0 +1,22 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	line-height: 25px;
+	margin: 0;
+	padding: 0;
+	margin-top: 100px;
+	background-color: $primary-color;
+}
+
+@media (min-width:768px) {
+	body {
+		background:url(https://images.pexels.com/photos/122376/pexels-photo-122376.jpeg?w=940&h=650&auto=compress&cs=tinysrgb); /* Nuestra imagen de fondo */
+		background-repeat:no-repeat; /* Indicamos que no se repetira */
+		background-size:cover; /* Encajamos la imagen al 100% del ancho */
+		background-attachment: fixed; /* Establecemos una posicion fija para la imagen */
+		line-height: 30px;
+		font-size: 1.2em;
+	}
+}

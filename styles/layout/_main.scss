@@ -1,0 +1,51 @@
+.container {
+  width: 80%;
+  max-width: 980px;
+  margin: auto;
+  padding: 0% 5%;
+	box-shadow:0 5px 5px 3px rgba(0, 0, 0, 0.25);
+	background:$secundary-color;
+}
+
+.box-article{
+  text-align: center;
+	padding-top: 7.5%;
+  margin-bottom: 7.5%;
+}
+
+.img-common{
+	width: 100%;
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+
+.img-testim{
+	width: 300px;
+	margin-top: 5%;
+}
+
+.text-border{
+	padding: 4%;
+	border-bottom: 0.5px solid $primary-color;
+}
+
+@media (min-width:768px) {
+
+	.container{
+    padding: 0% 5%;
+		box-shadow:0 5px 5px 3px rgba(0, 0, 0, 0.25);
+		background:$secundary-color;
+		width: 90%;
+		max-width:980px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.testimonious-flex{
+		display: flex;
+		flex-wrap: nowrap;
+		text-align: center;
+		width: 100%;
+	}
+
+}

@@ -1,0 +1,26 @@
+
+footer{
+display: flex;
+flex-flow: row wrap;
+justify-content: center;
+}
+
+.icon-social{
+  width: 50px;
+  padding-right: 5%;
+}
+
+.text-footer{
+  color: $secundary-color;
+}
+
+@media (min-width:768px) {
+
+  footer{
+    justify-content: space-around;
+  }
+
+  .icon-social{
+    width: 70px;
+  }
+}
