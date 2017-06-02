@@ -58,12 +58,12 @@ function positionMenu() {
     if ($(window).scrollTop() >= headerHeight){
         $('.header-content').addClass('fixed');
 				$('.nav').css('width', '90%');
-				$('.nav').css('box-shadow', '0 5px 5px 3px rgba(0, 0, 0, 0.25)');
+				$('.header-content').css('box-shadow', '0 5px 5px 3px rgba(0, 0, 0, 0.25)');
         $('.container').css('margin-top', (menuHeight) + 'px');
     } else {
         $('.header-content').removeClass('fixed');
 				$('.nav').css('width', '100%');
-				$('.nav').css('box-shadow', '0 5px 5px 3px rgba(0, 0, 0, 0)');
+				$('.header-content').css('box-shadow', '0 5px 5px 3px rgba(0, 0, 0, 0)');
         $('.container').css('margin-top', '0');
     }
 }
