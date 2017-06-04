@@ -37,6 +37,7 @@
   box-shadow: 0 0.125rem 0.75rem 0 rgba(30, 37, 45, 0.25);
   color: #212931;
   width: 50px;
+  z-index: 1;
 }
 
 .btn-menu-img{
@@ -291,6 +292,7 @@
   }
 
   .fixed{
+    z-index: 1;
     position: fixed;
     top:0;
     background-color: rgba(54,54,54, 0.9);

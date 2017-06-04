@@ -9,8 +9,8 @@
 
 .box-article{
   text-align: center;
-	padding-top: 7.5%;
-  margin-bottom: 7.5%;
+	padding-top: 5%;
+  margin-bottom: 5%;
 }
 
 .img-common{
@@ -47,5 +47,10 @@
 		text-align: center;
 		width: 100%;
 	}
+
+  .tableauPlaceholder {
+    z-index: 0;
+    margin-bottom: 50px;
+  }
 
 }
