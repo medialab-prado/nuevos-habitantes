@@ -1,4 +1,7 @@
 @charset "UTF-8";
+/*$text-color: #212931; queda mejor que el negro puro*/
+/*$article-border-color: solid #eeeeee;*/
+/*$breakpoint-tablet: 768px; Sustistuir en las media querys*/
 h1,
 h2 {
   line-height: 1em; }
@@ -42,7 +45,8 @@ body {
   margin: 0;
   padding: 0;
   margin-top: 100px;
-  background-color: #666666; }
+  background-color: #666666;
+  /*color: $text-color; queda mejor que el negro puro y mejora la legibilidad*/ }
 
 @media (min-width: 768px) {
   body {
@@ -347,6 +351,8 @@ body {
     position: fixed;
     top: 0;
     background-color: rgba(54, 54, 54, 0.9);
+    -webkit-box-shadow: 0 5px 5px 3px rgba(0, 0, 0, 0.25);
+            box-shadow: 0 5px 5px 3px rgba(0, 0, 0, 0.25);
     -webkit-transition: 1.2s;
     transition: 1.2s; }
 
@@ -365,6 +371,12 @@ body {
   text-align: center;
   padding-top: 5%;
   margin-bottom: 5%; }
+
+.section-container {
+  max-width: 300px;
+  color: white;
+  text-align: center;
+  margin: 0 auto; }
 
 .img-common {
   width: 100%;
@@ -389,6 +401,11 @@ body {
     background: white;
     margin-left: auto;
     margin-right: auto; }
+
+  .section-container {
+    max-width: 600px;
+    height: 200px;
+    margin-top: 80px; }
 
   .testimonious-flex {
     display: -webkit-box;
@@ -428,5 +445,63 @@ footer {
 
   .icon-social {
     width: 70px; } }
+.main-test-title {
+  letter-spacing: 0.075em;
+  padding: 5%;
+  max-width: 980px;
+  margin: auto;
+  background-color: white;
+  text-align: center; }
+
+.main-test-title hr {
+  margin-bottom: 0; }
+
+.posts-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 980px;
+  margin: auto; }
+
+.posts-container article {
+  display: block;
+  border: 1px solid #eeeeee;
+  padding: 5%;
+  margin: auto;
+  max-width: 100%;
+  background-color: white; }
+
+.posts-container h3, a {
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  letter-spacing: 0.075em;
+  text-decoration: none;
+  text-align: center;
+  color: inherit; }
+
+.posts-container p {
+  text-align: justify; }
+
+.posts-container img {
+  width: 100%; }
+
+.posts-container button {
+  text-transform: uppercase; }
+
+@media (min-width: 768px) {
+  .posts-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-bottom: 40px; }
+
+  .posts-container article {
+    max-width: 50%; } }
 
 /*# sourceMappingURL=index.css.map */

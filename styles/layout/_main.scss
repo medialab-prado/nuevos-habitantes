@@ -7,31 +7,38 @@
 	background:$secundary-color;
 }
 
-.box-article{
+.box-article {
   text-align: center;
 	padding-top: 5%;
   margin-bottom: 5%;
 }
 
-.img-common{
+.section-container {
+  max-width: 300px;
+  color: $secundary-color;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.img-common {
 	width: 100%;
 	margin-top: 5%;
 	margin-bottom: 5%;
 }
 
-.img-testim{
+.img-testim {
 	width: 300px;
 	margin-top: 5%;
 }
 
-.text-border{
+.text-border {
 	padding: 4%;
 	border-bottom: 0.5px solid $primary-color;
 }
 
 @media (min-width:768px) {
 
-	.container{
+	.container {
     width: 90%;
     max-width:980px;
     padding: 0% 5%;
@@ -40,8 +47,12 @@
 		margin-left: auto;
 		margin-right: auto;
 	}
-
-	.testimonious-flex{
+  .section-container {
+    max-width: 600px;
+    height: 200px;
+    margin-top: 80px;
+  }
+	.testimonious-flex {
 		display: flex;
 		flex-wrap: nowrap;
 		text-align: center;
