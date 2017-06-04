@@ -27,19 +27,19 @@ var subNav = document.getElementById("sub-nav");
 
 //mostrar menú móvil
 function showMenu(){
-  menuSmall.style.width= "80%";
+	menuSmall.style.width= "80%";
 }
 btnMenu.addEventListener("click", showMenu);
 
 //ocultar menú móvil
 function closeMenu(){
-  menuSmall.style.width= "0";
+	menuSmall.style.width= "0";
 }
 btnMenuClose.addEventListener("click", closeMenu);
 
 //Mostrar y ocultar submenú de datos en versión móvil
 function openCloseSubNav(){
-  subNav.classList.toggle("sub-nav-show");
+	subNav.classList.toggle("sub-nav-show");
 }
 btnSubnav.addEventListener("click",openCloseSubNav);
 
@@ -48,22 +48,52 @@ btnSubnav.addEventListener("click",openCloseSubNav);
 positionMenu();
 
 $(window).scroll(function() {
-    positionMenu();
+	positionMenu();
 });
 
 function positionMenu() {
-    var headerHeight = $('.title-container').outerHeight(true);
-    var menuHeight = $('.header-content').outerHeight(true);
+	var headerHeight = $('.title-container').outerHeight(true);
+	var sectionHeight = $('.section-container').outerHeight(true);
+	var menuHeight = $('.header-content').outerHeight(true);
 
-    if ($(window).scrollTop() >= headerHeight){
-        $('.header-content').addClass('fixed');
-				$('.nav').css('width', '90%');
-				$('.header-content').css('box-shadow', '0 5px 5px 3px rgba(0, 0, 0, 0.25)');
-        $('.container').css('margin-top', (menuHeight) + 'px');
-    } else {
-        $('.header-content').removeClass('fixed');
-				$('.nav').css('width', '100%');
-				$('.header-content').css('box-shadow', '0 5px 5px 3px rgba(0, 0, 0, 0)');
-        $('.container').css('margin-top', '0');
-    }
+	if ($(window).scrollTop() >= headerHeight){
+		$('.header-content').addClass('fixed');
+		$('.nav').css('width', '90%');
+		$('.container').css('margin-top', (menuHeight) + 'px');
+	} else if ($(window).scrollTop() >= sectionHeight){
+		$('.header-content').addClass('fixed');
+		$('.nav').css('width', '90%');
+		$('.container').css('margin-top', (menuHeight) + 'px');
+		$('.main-test-title').css('margin-top', (menuHeight) + 'px');
+	} else {
+		$('.header-content').removeClass('fixed');
+		$('.nav').css('width', '100%');
+		$('.container').css('margin-top', '0');
+		$('.main-test-title').css('margin-top', '0');
+	}
 }
+
+// GRAFICOS TABLEAU
+
+// para que aparezca por debajo del menú fixed
+setTimeout(function() {
+	var tableauIframeList = document.querySelectorAll('iframe');
+	for (var i = 0; i < tableauIframeList.length; i++) {
+		var tableauIframe = tableauIframeList[i];
+		var src = tableauIframe.getAttribute('src');
+		tableauIframe.setAttribute('src', src + '?wmode=transparent');
+		if (src.indexOf('Grfico2_2/Hoja1') > 0) {
+			tableauIframe.style('heigth', "200px");
+		}
+	}
+}, 1000);
+
+// para cambiar propiedad heigth
+
+// setTimeout(function() {
+// 	function changeHeigth (){
+//   var grafIdTableau = document.getElementById('viz1496486952761');
+// 	var grafTableau = document.querySelectorAll('iframe');
+//     grafTableau.setAttribute('height', "200px");
+// 	}
+// }, 1000);

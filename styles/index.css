@@ -78,6 +78,29 @@ body {
 @media (min-width: 768px) {
   .btn {
     width: 300px; } }
+.quotes {
+  border-left: 3px solid #cfd1d3;
+  margin-left: 2rem;
+  padding: 0.5rem 0 1rem 2rem;
+  font-style: italic;
+  font-weight: lighter;
+  color: #64696f;
+  vertical-align: baseline; }
+
+.iframe-video {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 35px;
+  height: 0;
+  overflow: hidden; }
+
+.iframe-video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
 .title-container {
   max-width: 300px;
   color: white;
@@ -477,12 +500,14 @@ footer {
   max-width: 100%;
   background-color: white; }
 
-.posts-container h3, a {
+.posts-container h3 {
   font-family: "Source Sans Pro", Helvetica, sans-serif;
   letter-spacing: 0.075em;
-  text-decoration: none;
-  text-align: center;
-  color: inherit; }
+  text-align: center; }
+
+.post-container a {
+  color: inherit;
+  text-decoration: none; }
 
 .posts-container p {
   text-align: justify; }
@@ -503,5 +528,4 @@ footer {
 
   .posts-container article {
     max-width: 50%; } }
-
 /*# sourceMappingURL=index.css.map */
