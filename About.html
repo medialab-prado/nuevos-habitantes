@@ -1,40 +1,85 @@
 
-  <!DOCTYPE html>
-  <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Web Adaorbit</title>
-    <link rel="stylesheet" href="styles/index.css">
-    <meta name="viewport" content="width=device-width">
-    <link href="https://fonts.googleapis.com/css?family=Merriweather:300|Source+Sans+Pro:900" rel="stylesheet">
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Web Adaorbit</title>
+  <link rel="stylesheet" href="styles/index.css">
+  <meta name="viewport" content="width=device-width">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:300|Source+Sans+Pro:900" rel="stylesheet">
 
-  </head>
+</head>
 
-  <body>
+<body>
+  <div class="section-container">
+    <h1>Los habitantes de la España vacía</h1>
+  </div>
 
-    <div class="container">
+  <div class="menu">
 
-      <article class="box-article">
+    <div class="header-content">
+      <button id="btn-menu" class="btn-menu" type="button" name="button">
+        <img class="btn-menu-img" src="images/icon-menu.png" alt="Icono selección menú">
+      </button>
 
-        <h2>Metodologia</h2>
-        <hr>
-        <img class="img-common" src="images/foto-parallax.jpg" alt="mapa">
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-          in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-          in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
+      <ul class="nav">
+        <li class="nav-item"><a class="nav-link" href="index.html">home</a></li>
+        <li class="nav-item "><a class="nav-link" href="datos.html">datos</a></li>
+        <li class="nav-item "><a class="nav-link" href="testimonios_main.html">testimonios</a></li>
+        <li class="nav-item  nav-item-active"><a class="nav-link nav-link-active" href="#">equipo</a></li>
+      </ul>
 
-        <button class="btn" type="button" name="button">LEER MÁS</button>
+    </div>
 
+    <div id="menu-small" class="menu-small-content">
 
-      </article>
+      <div class="btn-container">
+        <button id="btn-menu-close" class="btn-menu-close" type="button" name="button">
+          <img class="btn-menu-close-img" src="images/icon-close-menu.png" alt="Icono selección menú">
+        </button>
+      </div>
 
-<article class="box-article">
+      <ul class="nav-small">
+        <li class="nav-small-item"><a class="nav-small-link" href="index.html">home</a></li>
+        <li class="nav-small-item">
+          <a id="btn-subnav" class="nav-small-link subnav-a" href="datos.html">datos<img class="subnav-a-img"src="images/icon-expand.png" alt=""></a>
 
+          <ul id="sub-nav" class="sub-nav">
+            <li class="subnav-items"><a class="subnav-links" href="#">¿quiénes son?</a></li>
+            <li class="subnav-items"><a class="subnav-links" href="#">¿de dónde vienen?</a></li>
+            <li class="subnav-items"><a class="subnav-links" href="#">¿dónde están?</a></li>
+            <li class="subnav-items"><a class="subnav-links" href="#">¿cómo viven?</a></li>
+            <li class="subnav-items"><a class="subnav-links" href="#">¿cuántos son?</a></li>
+          </ul>
+        </li>
+        <li class="nav-small-item" ><a class="nav-small-link" href="testimonios_main.html">testimonios</a></li>
+        <li class="nav-small-item" ><a class="nav-small-link" href="#">equipo</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="container">
+
+    <article class="box-article">
+
+      <h2>Metodologia</h2>
+      <hr>
+      <img class="img-common" src="images/foto-parallax.jpg" alt="mapa">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+        in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+        in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+
+      <button class="btn" type="button" name="button">LEER MÁS</button>
+
+    </article>
+
+    <article class="box-article">
 
       <h2>Equipo</h2>
       <hr>
@@ -50,14 +95,13 @@
 
       <button class="btn" type="button" name="button">LEER MÁS</button>
 
+    </article>
 
-      </article>
+  </div>
 
-    </div>
+  <script src="js/jquery.min.js" charset="utf-8"></script>
+  <script src="js/main.js" charset="utf-8"></script>
 
-    <script src="js/jquery.min.js" charset="utf-8"></script>
-    <script src="js/main.js" charset="utf-8"></script>
+</body>
 
-  </body>
-
-  </html>
+</html>
