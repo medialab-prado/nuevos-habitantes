@@ -29,12 +29,15 @@
   background-color: white;
 }
 
-.posts-container h3,a {
-	font-family: "Source Sans Pro", Helvetica, sans-serif;
+.posts-container h3 {
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
   letter-spacing: 0.075em;
-  text-decoration: none;
   text-align: center;
+}
+
+.post-container a {
   color: inherit;
+  text-decoration: none;
 }
 
 .posts-container p {
