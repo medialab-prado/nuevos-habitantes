@@ -259,6 +259,7 @@ body {
 .up-page {
   width: 50px;
   position: fixed;
+  display: none;
   bottom: 30px;
   right: 10px;
   cursor: pointer; }
@@ -395,7 +396,10 @@ body {
     transition: 1.2s; }
 
   .anchor {
-    top: -100px; } }
+    top: -100px; }
+
+  .icon-up {
+    display: none; } }
 .container {
   width: 100%;
   max-width: 980px;
@@ -444,9 +448,6 @@ body {
     max-width: 600px;
     height: 200px;
     margin-top: 80px; }
-
-  .icon-up {
-    display: none; }
 
   .testimonious-flex {
     display: -webkit-box;
