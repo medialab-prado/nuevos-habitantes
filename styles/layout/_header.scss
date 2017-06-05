@@ -7,6 +7,22 @@
   margin-right: auto;
 }
 
+.title-home{
+  animation: fadeFromTop 5s ;
+}
+
+@keyframes fadeFromTop {
+  0% {
+    opacity: 0;
+  }
+transform : translateY(-40%);
+}
+
+.p-title{
+  animation: fadeFromTop 5s;
+}
+
+
 .img-arrow{
   margin-top: 20px;
   margin-bottom: 20px;

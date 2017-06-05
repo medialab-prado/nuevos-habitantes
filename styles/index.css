@@ -108,6 +108,25 @@ body {
   margin-left: auto;
   margin-right: auto; }
 
+.title-home {
+  -webkit-animation: fadeFromTop 5s;
+          animation: fadeFromTop 5s; }
+
+@-webkit-keyframes fadeFromTop {
+  0% {
+    opacity: 0; }
+  -webkit-transform: translateY(-40%);
+          transform: translateY(-40%); }
+
+@keyframes fadeFromTop {
+  0% {
+    opacity: 0; }
+  -webkit-transform: translateY(-40%);
+          transform: translateY(-40%); }
+.p-title {
+  -webkit-animation: fadeFromTop 5s;
+          animation: fadeFromTop 5s; }
+
 .img-arrow {
   margin-top: 20px;
   margin-bottom: 20px;
