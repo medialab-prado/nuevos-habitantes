@@ -41,7 +41,7 @@
 	.container {
     width: 90%;
     max-width:980px;
-    padding: 0% 5%;
+    padding: 0% 5% 1% 5%;
 		box-shadow:0 5px 5px 3px rgba(0, 0, 0, 0.25);
 		background:$secundary-color;
 		margin-left: auto;
@@ -53,7 +53,6 @@
     height: 200px;
     margin-top: 80px;
   }
-
 
 	.testimonious-flex {
 		display: flex;
