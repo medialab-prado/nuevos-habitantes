@@ -210,7 +210,9 @@ body {
           justify-content: space-between; }
 
 .subnav-a-img {
-  width: 20px; }
+  width: 20px;
+  -webkit-transition: 300ms linear all;
+  transition: 300ms linear all; }
 
 .subnav-a-img-rotate {
   -webkit-transform: rotate(-180deg);
