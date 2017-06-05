@@ -212,6 +212,12 @@ body {
 .subnav-a-img {
   width: 20px; }
 
+.subnav-a-img-rotate {
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+  -webkit-transition: 300ms linear all;
+  transition: 300ms linear all; }
+
 .sub-nav {
   list-style: none;
   overflow: hidden;

@@ -22,8 +22,12 @@ $(document).ready(function(){
 var btnMenu= document.getElementById("btn-menu");
 var menuSmall= document.getElementById("menu-small");
 var btnMenuClose= document.getElementById("btn-menu-close");
-var btnSubnav = document.getElementById("btn-subnav");
-var subNav = document.getElementById("sub-nav");
+var btnSubnavData = document.getElementById("btn-subnav-data");
+var subNavData = document.getElementById("sub-nav-data");
+var subDataIcon = document.getElementById("subnav-data-img");
+var btnSubnavTes = document.getElementById("btn-subnav-tes");
+var subNavTes = document.getElementById("sub-nav-tes");
+var subTesIcon = document.getElementById("subnav-tes-img");
 
 //mostrar menú móvil
 function showMenu(){
@@ -31,17 +35,28 @@ function showMenu(){
 }
 btnMenu.addEventListener("click", showMenu);
 
+
 //ocultar menú móvil
 function closeMenu(){
 	menuSmall.style.width= "0";
 }
 btnMenuClose.addEventListener("click", closeMenu);
 
+
 //Mostrar y ocultar submenú de datos en versión móvil
-function openCloseSubNav(){
-	subNav.classList.toggle("sub-nav-show");
+function openCloseSubNavData(){
+	subNavData.classList.toggle("sub-nav-show");
+	subDataIcon.classList.toggle("subnav-a-img-rotate");
 }
-btnSubnav.addEventListener("click",openCloseSubNav);
+btnSubnavData.addEventListener("click",openCloseSubNavData);
+
+
+//Mostrar y ocultar submenú de testimonios en la versión móvil
+function openCloseSubNavTes(){
+	subNavTes.classList.toggle("sub-nav-show");
+	subTesIcon.classList.toggle("subnav-a-img-rotate");
+}
+btnSubnavTes.addEventListener("click", openCloseSubNavTes);
 
 
 //Fijar la barra de navegación

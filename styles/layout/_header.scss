@@ -109,6 +109,11 @@
   width: 20px;
 }
 
+.subnav-a-img-rotate{
+  transform: rotate(-180deg);
+  transition: 300ms linear all;
+}
+
 .sub-nav{
   list-style: none;
   overflow: hidden;
