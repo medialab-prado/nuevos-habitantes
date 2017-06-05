@@ -149,6 +149,14 @@
   top: -25px;
   visibility: hidden;
 }
+//Flecha para subir
+.up-page{
+  width: 50px;
+  position: fixed;
+  bottom: 30px;
+  right: 10px;
+  cursor: pointer;
+}
 
 @media (min-width:768px) {
 

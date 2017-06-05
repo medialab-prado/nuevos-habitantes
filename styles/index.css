@@ -248,6 +248,13 @@ body {
   top: -25px;
   visibility: hidden; }
 
+.up-page {
+  width: 50px;
+  position: fixed;
+  bottom: 30px;
+  right: 10px;
+  cursor: pointer; }
+
 @media (min-width: 768px) {
   .title-container {
     max-width: 600px;
@@ -528,4 +535,5 @@ footer {
 
   .posts-container article {
     max-width: 50%; } }
+
 /*# sourceMappingURL=index.css.map */

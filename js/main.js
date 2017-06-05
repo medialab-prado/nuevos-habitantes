@@ -73,6 +73,27 @@ function positionMenu() {
 	}
 }
 
+//Flecha para subir arriba en versión móvil
+
+$(document).ready(function(){
+
+	$('.up-page').click(function(){
+		$('body, html').animate({
+			scrollTop: '0px'
+		}, 1000);
+	});
+
+	$(window).scroll(function(){
+		if( $(this).scrollTop() > 0 ){
+			$('.up-page').fadeIn(300);
+		} else {
+			$('.up-page').fadeOut(300);
+		}
+	});
+
+})
+
+
 // GRAFICOS TABLEAU
 
 // para que aparezca por debajo del menú fixed
