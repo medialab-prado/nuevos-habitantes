@@ -437,6 +437,9 @@ body {
     height: 200px;
     margin-top: 80px; }
 
+  .icon-up {
+    display: none; }
+
   .testimonious-flex {
     display: -webkit-box;
     display: -ms-flexbox;
