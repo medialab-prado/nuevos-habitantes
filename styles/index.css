@@ -269,7 +269,7 @@ body {
   padding-bottom: 10px; }
 
 .subnav-links:active {
-  color: #18bfef; }
+  color: #5d6836; }
 
 .submenu-data {
   display: none; }
@@ -366,7 +366,7 @@ body {
 
   .nav-link-active:hover {
     color: #ccc99c;
-    background: #ffffff; }
+    background: white; }
 
   .submenu-data {
     width: 90%;
@@ -390,7 +390,7 @@ body {
   .submenu-data-links {
     text-decoration: none;
     text-transform: uppercase;
-    color: black;
+    color: #5d6836;
     font-size: 14px;
     padding: 12px;
     display: block; }
@@ -402,7 +402,7 @@ body {
     left: 30px;
     right: 100%;
     bottom: 4px;
-    background: #2098D1;
+    background: #ccc99c;
     height: 3px;
     -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s; }
