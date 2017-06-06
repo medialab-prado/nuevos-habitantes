@@ -74,16 +74,16 @@ function positionMenu() {
 	if ($(window).scrollTop() >= headerHeight){
 		$('.header-content').addClass('fixed');
 		$('.nav').css('width', '90%');
-		$('.container').css('margin-top', (menuHeight) + 'px');
+		// $('.container').css('margin-top', (menuHeight) + 'px');
 	} else if ($(window).scrollTop() >= sectionHeight){
 		$('.header-content').addClass('fixed');
 		$('.nav').css('width', '90%');
-		$('.container').css('margin-top', (menuHeight) + 'px');
+		// $('.container').css('margin-top', (menuHeight) + 'px');
 		$('.main-test-title').css('margin-top', (menuHeight) + 'px');
 	} else {
 		$('.header-content').removeClass('fixed');
 		$('.nav').css('width', '100%');
-		$('.container').css('margin-top', '0');
+		// $('.container').css('margin-top', '0');
 		$('.main-test-title').css('margin-top', '0');
 	}
 }
@@ -105,9 +105,7 @@ $(document).ready(function(){
 			$('.up-page').fadeOut(300);
 		}
 	});
-
 })
-
 
 // GRAFICOS TABLEAU
 
@@ -118,18 +116,5 @@ setTimeout(function() {
 		var tableauIframe = tableauIframeList[i];
 		var src = tableauIframe.getAttribute('src');
 		tableauIframe.setAttribute('src', src + '?wmode=transparent');
-		if (src.indexOf('Grfico2_2/Hoja1') > 0) {
-			tableauIframe.style('heigth', "200px");
-		}
 	}
 }, 1000);
-
-// para cambiar propiedad heigth
-
-// setTimeout(function() {
-// 	function changeHeigth (){
-//   var grafIdTableau = document.getElementById('viz1496486952761');
-// 	var grafTableau = document.querySelectorAll('iframe');
-//     grafTableau.setAttribute('height', "200px");
-// 	}
-// }, 1000);

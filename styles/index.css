@@ -428,8 +428,7 @@ body {
 
 .box-article {
   text-align: center;
-  padding-top: 5%;
-  margin-bottom: 5%; }
+  padding-top: 5%; }
 
 .section-container {
   max-width: 300px;
@@ -479,6 +478,7 @@ body {
     z-index: 0;
     margin-bottom: 50px; } }
 footer {
+  margin-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -507,14 +507,12 @@ footer {
     width: 70px; } }
 .main-test-title {
   letter-spacing: 0.075em;
-  padding: 5%;
+  padding-bottom: 2%;
+  padding-top: 4%;
   max-width: 980px;
   margin: auto;
   background-color: white;
   text-align: center; }
-
-.main-test-title hr {
-  margin-bottom: 0; }
 
 .posts-container {
   display: -webkit-box;
@@ -558,12 +556,15 @@ footer {
   margin: auto; }
 
 @media (min-width: 768px) {
+  .main-test-title {
+    width: 90%; }
+
   .posts-container {
+    width: 90%;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
-            flex-direction: row;
-    margin-bottom: 40px; }
+            flex-direction: row; }
 
   .posts-container article {
     max-width: 50%; } }
