@@ -1,28 +1,28 @@
 
-footer{
+footer {
 margin-top: 20px;
 display: flex;
 flex-flow: row wrap;
 justify-content: center;
 }
 
-.icon-social{
+.icon-social {
   width: 50px;
   padding-right: 5%;
 }
 
-.text-footer{
+.text-footer {
   color: $secundary-color;
 }
 
 @media (min-width:768px) {
 
-  footer{
+  footer {
     justify-content: space-around;
     padding-top: 2%;
   }
 
-  .icon-social{
+  .icon-social {
     width: 70px;
   }
 }

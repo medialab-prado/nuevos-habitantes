@@ -8,7 +8,7 @@ body {
 	padding: 0;
 	margin-top: 100px;
 	background-color: $primary-color;
-	/*color: $text-color; queda mejor que el negro puro y mejora la legibilidad*/
+	color: $color-text;
 }
 
 @media (min-width:768px) {

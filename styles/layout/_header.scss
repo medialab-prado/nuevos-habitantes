@@ -1,5 +1,5 @@
 
-.title-container{
+.title-container {
   max-width: 300px;
   color: $secundary-color;
   text-align: center;
@@ -7,7 +7,7 @@
   margin-right: auto;
 }
 
-.title-home{
+.title-home {
   animation: fadeFromTop 5s ;
 }
 
@@ -15,21 +15,21 @@
   0% {
     opacity: 0;
   }
-transform : translateY(-40%);
+  transform: translateY(-40%);
 }
 
-.p-title{
+.p-title {
   animation: fadeFromTop 5s;
 }
 
 
-.img-arrow{
+.img-arrow {
   margin-top: 20px;
   margin-bottom: 20px;
   width: 70px;
 }
 
-.header-content{
+.header-content {
   width: 100%;
   display: flex;
   justify-content: flex-end;
@@ -38,12 +38,12 @@ transform : translateY(-40%);
   font-family: 'Source Sans Pro', sans-serif;
 }
 
-.btn-container{
+.btn-container {
   width: 100%;
   text-align: right;
 }
 
-.btn-menu{
+.btn-menu {
   position: fixed;
   display: flex;
   top: 0.75rem;
@@ -56,7 +56,7 @@ transform : translateY(-40%);
   z-index: 1;
 }
 
-.btn-menu-img{
+.btn-menu-img {
   width: 100%;
 }
 
@@ -162,7 +162,7 @@ transform : translateY(-40%);
 }
 
 .submenu-data{
- display:none;
+  display:none;
 }
 
 .anchor {
@@ -244,11 +244,12 @@ transform : translateY(-40%);
     list-style: none;
     margin: 0 auto;
     padding-left: 0;
-    background: rgba(255, 255, 255, 0.175);
+    background: #5d6836;
+    opacity: 0.8;
   }
 
   .nav-link{
-    color: #ffffff;
+    color: $secundary-color;
     font-size: 1.2em;
     text-transform: uppercase;
     text-decoration: none;
@@ -262,16 +263,20 @@ transform : translateY(-40%);
     background: rgba(255, 255, 255, 0.175);
   }
 
+  .nav-link:hover{
+    color: $color-hr;
+  }
+
   .nav-item-active{
-    background: #ffffff;
+    background: $secundary-color;
   }
 
   .nav-link-active{
-    color: rgb(33,41,49);
+    color: $color-menu-button;
   }
 
   .nav-link-active:hover{
-    color: #18bfef;
+    color: $color-hr;
     background: #ffffff;
   }
 
@@ -326,7 +331,8 @@ transform : translateY(-40%);
     z-index: 1;
     position: fixed;
     top:0;
-    background-color: rgba(54,54,54, 0.9);
+    background-color: $color-menu-button;
+    opacity: 0.9;
     box-shadow: 0 5px 5px 3px rgba(0, 0, 0, 0.25);
     transition: 1.2s;
   }
@@ -335,7 +341,7 @@ transform : translateY(-40%);
     top: -100px;
   }
 
-//Flecha para subir
+  //Flecha para subir
   .icon-up{
     display: none;
   }
