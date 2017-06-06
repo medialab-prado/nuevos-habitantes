@@ -4,7 +4,7 @@
   padding: 5%;
   max-width: 980px;
   margin: auto;
-  background-color: white;
+  background-color: $secundary-color;
   text-align: center;
 }
 
@@ -26,11 +26,11 @@
   padding: 5%;
   margin: auto;
   max-width: 100%;
-  background-color: white;
+  background-color: $secundary-color;
 }
 
 .posts-container h3 {
-  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  font-family: $default-font-family-uppercase;
   letter-spacing: 0.075em;
   text-align: center;
 }
