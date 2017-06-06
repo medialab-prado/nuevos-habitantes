@@ -1,7 +1,5 @@
 @charset "UTF-8";
 /*$text-color: #212931; queda mejor que el negro puro*/
-/*$article-border-color: solid #eeeeee;*/
-/*$breakpoint-tablet: 768px; Sustistuir en las media querys*/
 h1,
 h2 {
   line-height: 1em; }
@@ -524,7 +522,7 @@ footer {
   letter-spacing: 0.075em;
   text-align: center; }
 
-.post-container a {
+.post-article a {
   color: inherit;
   text-decoration: none; }
 
@@ -535,7 +533,9 @@ footer {
   width: 100%; }
 
 .posts-container button {
-  text-transform: uppercase; }
+  display: block;
+  text-transform: uppercase;
+  margin: auto; }
 
 @media (min-width: 768px) {
   .posts-container {
