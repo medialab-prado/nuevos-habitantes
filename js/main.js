@@ -88,6 +88,60 @@ function positionMenu() {
 	}
 }
 
+//Segunda barra de navegación active
+
+var click = false;
+ $(document).ready(function () {
+            $(document).on("scroll", onScroll);
+            //smoothscroll
+            $('a[href^="#"]').on('click', function (e) {
+				        click = true;
+                e.preventDefault();
+                $(document).off("scroll");
+
+                $('a').each(function () {
+                    $(this).removeClass('active');
+                })
+                $(this).addClass('active');
+
+                var target = this.hash,
+                    menu = target;
+                $target = $(target);
+
+				//
+								$('html, body').stop().animate({
+				                    'scrollTop': $target.offset().top - 100
+				                }, 500, 'swing', function () {
+				                    window.location.hash = target;
+				                    $(document).on("scroll", onScroll2);
+				                		}
+								);
+    				});
+	});
+
+		 function onScroll2(event) {
+            var scrollPos = $(document).scrollTop();
+             $(document).on("scroll", onScroll);
+        }
+
+
+        function onScroll(event) {
+            var scrollPos = $(document).scrollTop();
+            $('.submenu-data a').each(function () {
+                var currLink = $(this);
+                var refElement = $(currLink.attr("href"));
+
+  		        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() - 100 > scrollPos) {
+                    $('.submenu-data a').removeClass("active");
+                    currLink.addClass("active");
+                }
+                else {
+                    currLink.removeClass("active");
+                }
+            });
+        }
+
+
 //Flecha para subir arriba en versión móvil
 
 $(document).ready(function(){

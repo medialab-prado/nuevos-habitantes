@@ -165,6 +165,7 @@
   display:none;
 }
 
+
 .anchor {
   display: block;
   position: relative;
@@ -321,6 +322,10 @@
 
   .submenu-data-links:hover:before, .submenu-data:focus:before, .submenu-data:active:before {
     right: 30px;
+  }
+
+  .active{
+    color:$color-hr;
   }
 
   .menu-small-content{
