@@ -18,7 +18,7 @@ $(document).ready(function(){
 // http://www.javascriptkit.com/dhtmltutors/parallaxscrolling/
 
 
-// MENÚ DE NAVAGECIÓN
+// MENÚ DE NAVEGACIÓN
 
 var btnMenu= document.getElementById("btn-menu");
 var menuSmall= document.getElementById("menu-small");
@@ -107,11 +107,11 @@ var click = false;
 
                 var target = this.hash,
                     menu = target;
-                $target = $(target);
+                target = $(target);
 
 				//
 								$('html, body').stop().animate({
-				                    'scrollTop': $target.offset().top - 100
+				                    'scrollTop': target.offset().top - 100
 				                }, 500, 'swing', function () {
 				                    window.location.hash = target;
 				                    $(document).on("scroll", onScroll2);
@@ -119,12 +119,6 @@ var click = false;
 								);
     				});
 	});
-
-		 function onScroll2(event) {
-            var scrollPos = $(document).scrollTop();
-             $(document).on("scroll", onScroll);
-        }
-
 
         function onScroll(event) {
             var scrollPos = $(document).scrollTop();
