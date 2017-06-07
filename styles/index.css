@@ -54,7 +54,7 @@ body {
 
 @media (min-width: 768px) {
   body {
-    background: url(https://images.pexels.com/photos/122376/pexels-photo-122376.jpeg?w=940&h=650&auto=compress&cs=tinysrgb);
+    background: url(../images/foto2.jpg);
     /* Nuestra imagen de fondo */
     background-repeat: no-repeat;
     /* Indicamos que no se repetira */
@@ -167,6 +167,7 @@ body {
   background-color: rgba(255, 255, 255, 0.875);
   -webkit-box-shadow: 0 0.125rem 0.75rem 0 rgba(30, 37, 45, 0.25);
           box-shadow: 0 0.125rem 0.75rem 0 rgba(30, 37, 45, 0.25);
+  border-radius: 5px;
   color: #212931;
   width: 50px;
   z-index: 1; }
@@ -281,11 +282,11 @@ body {
   visibility: hidden; }
 
 .up-page {
-  width: 50px;
+  width: 30px;
   position: fixed;
   display: none;
   bottom: 30px;
-  right: 10px;
+  right: 40px;
   cursor: pointer; }
 
 @media (min-width: 768px) {

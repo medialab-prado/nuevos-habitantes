@@ -1,4 +1,5 @@
 // EFECTO PARALLAX
+'use strict';
 
 $(document).ready(function(){
 
