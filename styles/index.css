@@ -411,6 +411,9 @@ body {
   .submenu-data-links:hover:before, .submenu-data:focus:before, .submenu-data:active:before {
     right: 30px; }
 
+  .active {
+    color: #ccc99c; }
+
   .menu-small-content {
     display: none; }
 
