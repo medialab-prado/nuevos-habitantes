@@ -7,13 +7,13 @@ body {
 	margin: 0;
 	padding: 0;
 	margin-top: 100px;
-	background-color: $primary-color;
+	background-color: $color-menu-button;
 	color: $color-text;
 }
 
 @media (min-width:768px) {
 	body {
-		background: url(../images/foto2.jpg); /* Nuestra imagen de fondo */
+		background: url(../images/foto1.JPG); /* Nuestra imagen de fondo */
 		background-repeat:no-repeat; /* Indicamos que no se repetira */
 		background-size:cover; /* Encajamos la imagen al 100% del ancho */
 		background-attachment: fixed; /* Establecemos una posicion fija para la imagen */
