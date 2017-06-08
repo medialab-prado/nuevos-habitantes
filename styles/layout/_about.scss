@@ -1,0 +1,37 @@
+.adalab{
+text-align: center;
+padding: 2%;
+width: 100px;
+}
+
+.team-web{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.team-github{
+  display: flex;
+  flex-direction: column;
+}
+
+.icon-socialB{
+  width: 30px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  margin-left: 40%;
+}
+
+@media (min-width:768px) {
+
+  .adalab{
+  width: 180px;
+  }
+
+  .icon-socialB{
+    width: 40px;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+
+}

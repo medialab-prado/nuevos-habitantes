@@ -39,6 +39,13 @@ p {
   margin-top: 20px;
   margin-bottom: 50px; }
 
+.team-title {
+  margin-bottom: 15px; }
+
+.team {
+  font-size: 0.8em;
+  line-height: 0.6em; }
+
 hr {
   margin-top: 5px;
   margin-bottom: 50px;
@@ -629,4 +636,45 @@ footer {
 
   .posts-container article {
     max-width: 50%; } }
+.adalab {
+  text-align: center;
+  padding: 2%;
+  width: 100px; }
+
+.team-web {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.team-github {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.icon-socialB {
+  width: 30px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  margin-left: 40%; }
+
+@media (min-width: 768px) {
+  .adalab {
+    width: 180px; }
+
+  .icon-socialB {
+    width: 40px;
+    margin-top: 0;
+    margin-bottom: 10px; } }
+
 /*# sourceMappingURL=index.css.map */
