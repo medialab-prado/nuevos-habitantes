@@ -482,7 +482,7 @@
     },
     {
       "A": "Guadalajara",
-      "B": "Cubillo de Uceda,El",
+      "B": "Cubillo de Uceda",
       "D": "0.21481481481481482"
     },
     {
@@ -527,7 +527,7 @@
     },
     {
       "A": "Toledo",
-      "B": "Casar de Escalona,El",
+      "B": "Casar de Escalona",
       "D": "0.2090015519917227"
     },
     {
@@ -1472,7 +1472,7 @@
     },
     {
       "A": "La Rioja",
-      "B": "Villar de Arnedo,El",
+      "B": "Villar de Arnedo",
       "D": "0.15248796147672553"
     },
     {
@@ -1552,7 +1552,7 @@
     },
     {
       "A": "Toledo",
-      "B": "Navalmorales,Los",
+      "B": "Navalmorales",
       "D": "0.14964459408903855"
     },
     {
@@ -1727,7 +1727,7 @@
     },
     {
       "A": "Cuenca",
-      "B": "Provencio,El",
+      "B": "Provencio",
       "D": "0.14451097804391216"
     },
     {
@@ -1797,7 +1797,7 @@
     },
     {
       "A": "Avila",
-      "B": "Arenal,El",
+      "B": "Arenal",
       "D": "0.1432865731462926"
     },
     {
@@ -1837,12 +1837,12 @@
     },
     {
       "A": "Toledo",
-      "B": "Real de San Vicente,El",
+      "B": "Real de San Vicente",
       "D": "0.14228456913827656"
     },
     {
       "A": "Guadalajara",
-      "B": "Casar,El",
+      "B": "Casar",
       "D": "0.14197051978277736"
     },
     {
@@ -1887,7 +1887,7 @@
     },
     {
       "A": "Guadalajara",
-      "B": "Pedregal,El",
+      "B": "Pedregal",
       "D": "0.14102564102564102"
     },
     {
@@ -2047,7 +2047,7 @@
     },
     {
       "A": "Avila",
-      "B": "Tiemblo,El",
+      "B": "Tiemblo",
       "D": "0.1369928400954654"
     },
     {
@@ -2147,7 +2147,7 @@
     },
     {
       "A": "Segovia",
-      "B": "Espinar,El",
+      "B": "Espinar",
       "D": "0.13493269648284845"
     },
     {
@@ -2357,7 +2357,7 @@
     },
     {
       "A": "Teruel",
-      "B": "Pobo,El",
+      "B": "Pobo",
       "D": "0.12878787878787878"
     },
     {
@@ -2547,7 +2547,7 @@
     },
     {
       "A": "Soria",
-      "B": "Rábanos,Los",
+      "B": "Rábanos",
       "D": "0.12398373983739837"
     },
     {
@@ -2667,7 +2667,7 @@
     },
     {
       "A": "Toledo",
-      "B": "Toboso,El",
+      "B": "Toboso",
       "D": "0.12188659247482776"
     },
     {
@@ -3012,7 +3012,7 @@
     },
     {
       "A": "Zaragoza",
-      "B": "Pintanos,Los",
+      "B": "Pintanos",
       "D": "0.11627906976744186"
     },
     {
@@ -3292,7 +3292,7 @@
     },
     {
       "A": "La Rioja",
-      "B": "Rasillo de Cameros,El",
+      "B": "Rasillo de Cameros",
       "D": "0.11188811188811189"
     },
     {
@@ -3572,7 +3572,7 @@
     },
     {
       "A": "Toledo",
-      "B": "Viso de San Juan,El",
+      "B": "Viso de San Juan",
       "D": "0.10720228191110055"
     },
     {
@@ -3892,7 +3892,7 @@
     },
     {
       "A": "Huesca",
-      "B": "Grado,El",
+      "B": "Grado",
       "D": "0.1016548463356974"
     },
     {
@@ -3927,7 +3927,7 @@
     },
     {
       "A": "Toledo",
-      "B": "Cerralbos,Los",
+      "B": "Cerralbos",
       "D": "0.10120481927710843"
     },
     {
@@ -4622,7 +4622,7 @@
     },
     {
       "A": "Cuenca",
-      "B": "Acebrón,El",
+      "B": "Acebrón",
       "D": "0.09322033898305085"
     },
     {
@@ -4672,7 +4672,7 @@
     },
     {
       "A": "Salamanca",
-      "B": "Cabaco,El",
+      "B": "Cabaco",
       "D": "0.09274193548387097"
     },
     {
@@ -5072,7 +5072,7 @@
     },
     {
       "A": "Toledo",
-      "B": "Yébenes,Los",
+      "B": "Yébenes",
       "D": "0.08794093519278097"
     },
     {
@@ -5122,7 +5122,7 @@
     },
     {
       "A": "Ciudad Real",
-      "B": "Pozuelos de Calatrava,Los",
+      "B": "Pozuelos de Calatrava",
       "D": "0.0875"
     },
     {
@@ -5247,7 +5247,7 @@
     },
     {
       "A": "Cuenca",
-      "B": "Valle de Altomira,El",
+      "B": "Valle de Altomira",
       "D": "0.08620689655172414"
     },
     {
@@ -5257,7 +5257,7 @@
     },
     {
       "A": "Avila",
-      "B": "Barco de Ávila,El",
+      "B": "Barco de Ávila",
       "D": "0.08609539207760711"
     },
     {
@@ -5327,7 +5327,7 @@
     },
     {
       "A": "Salamanca",
-      "B": "Payo,El",
+      "B": "Payo",
       "D": "0.08533333333333333"
     },
     {
@@ -5357,7 +5357,7 @@
     },
     {
       "A": "Guadalajara",
-      "B": "Sotillo,El",
+      "B": "Sotillo",
       "D": "0.0851063829787234"
     },
     {
@@ -5367,7 +5367,7 @@
     },
     {
       "A": "Ciudad Real",
-      "B": "Robledo,El",
+      "B": "Robledo",
       "D": "0.08493870402802102"
     },
     {
@@ -5382,7 +5382,7 @@
     },
     {
       "A": "Cuenca",
-      "B": "Herrumblar,El",
+      "B": "Herrumblar",
       "D": "0.0847457627118644"
     },
     {
@@ -5642,7 +5642,7 @@
     },
     {
       "A": "Toledo",
-      "B": "Navalucillos,Los",
+      "B": "Navalucillos",
       "D": "0.08185361628410567"
     },
     {
@@ -5912,7 +5912,7 @@
     },
     {
       "A": "Zaragoza",
-      "B": "Burgo de Ebro,El",
+      "B": "Burgo de Ebro",
       "D": "0.07889215274863617"
     },
     {
@@ -5972,7 +5972,7 @@
     },
     {
       "A": "Guadalajara",
-      "B": "Olivar,El",
+      "B": "Olivar",
       "D": "0.07792207792207792"
     },
     {
@@ -6067,7 +6067,7 @@
     },
     {
       "A": "Cuenca",
-      "B": "Picazo,El",
+      "B": "Picazo",
       "D": "0.07703488372093023"
     },
     {
@@ -6097,7 +6097,7 @@
     },
     {
       "A": "Huesca",
-      "B": "Pueyo de Araguás,El",
+      "B": "Pueyo de Araguás",
       "D": "0.07692307692307693"
     },
     {
@@ -6232,7 +6232,7 @@
     },
     {
       "A": "Avila",
-      "B": "Barraco,El",
+      "B": "Barraco",
       "D": "0.07592303692147685"
     },
     {
@@ -6287,7 +6287,7 @@
     },
     {
       "A": "Cuenca",
-      "B": "Peral,El",
+      "B": "Peral",
       "D": "0.07570977917981073"
     },
     {
@@ -6367,7 +6367,7 @@
     },
     {
       "A": "Cuenca",
-      "B": "Hinojosos,Los",
+      "B": "Hinojosos",
       "D": "0.07476635514018691"
     },
     {
@@ -6592,7 +6592,7 @@
     },
     {
       "A": "Caceres",
-      "B": "Torno,El",
+      "B": "Torno",
       "D": "0.07268722466960352"
     },
     {
@@ -6987,7 +6987,7 @@
     },
     {
       "A": "Cuenca",
-      "B": "Pedernoso,El",
+      "B": "Pedernoso",
       "D": "0.06972789115646258"
     },
     {
@@ -6997,7 +6997,7 @@
     },
     {
       "A": "Avila",
-      "B": "Hoyo de Pinares,El",
+      "B": "Hoyo de Pinares",
       "D": "0.06969563299514778"
     },
     {
@@ -7182,7 +7182,7 @@
     },
     {
       "A": "Burgos",
-      "B": "Balbases,Los",
+      "B": "Balbases",
       "D": "0.06818181818181818"
     },
     {
@@ -7677,7 +7677,7 @@
     },
     {
       "A": "Salamanca",
-      "B": "Arco,El",
+      "B": "Arco",
       "D": "0.06451612903225806"
     },
     {
@@ -7697,7 +7697,7 @@
     },
     {
       "A": "Valladolid",
-      "B": "Campillo,El",
+      "B": "Campillo",
       "D": "0.06451612903225806"
     },
     {
@@ -7902,7 +7902,7 @@
     },
     {
       "A": "Teruel",
-      "B": "Olmos,Los",
+      "B": "Olmos",
       "D": "0.06299212598425197"
     },
     {
@@ -8107,7 +8107,7 @@
     },
     {
       "A": "Toledo",
-      "B": "Carpio de Tajo,El",
+      "B": "Carpio de Tajo",
       "D": "0.06164034640855833"
     },
     {
@@ -9077,7 +9077,7 @@
     },
     {
       "A": "Guadalajara",
-      "B": "Pobo de Dueñas,El",
+      "B": "Pobo de Dueñas",
       "D": "0.05555555555555555"
     },
     {
@@ -9187,7 +9187,7 @@
     },
     {
       "A": "Albacete",
-      "B": "Ballestero,El",
+      "B": "Ballestero",
       "D": "0.05504587155963303"
     },
     {
@@ -9242,7 +9242,7 @@
     },
     {
       "A": "Salamanca",
-      "B": "Bodón,El",
+      "B": "Bodón",
       "D": "0.05460750853242321"
     },
     {
@@ -9707,7 +9707,7 @@
     },
     {
       "A": "Avila",
-      "B": "Hornillo,El",
+      "B": "Hornillo",
       "D": "0.05144694533762058"
     },
     {
@@ -9752,7 +9752,7 @@
     },
     {
       "A": "Toledo",
-      "B": "Campillo de la Jara,El",
+      "B": "Campillo de la Jara",
       "D": "0.05128205128205128"
     },
     {
@@ -9827,7 +9827,7 @@
     },
     {
       "A": "Teruel",
-      "B": "Vallecillo,El",
+      "B": "Vallecillo",
       "D": "0.05084745762711865"
     },
     {
@@ -10452,7 +10452,7 @@
     },
     {
       "A": "Zaragoza",
-      "B": "Fayos,Los",
+      "B": "Fayos",
       "D": "0.047619047619047616"
     },
     {
@@ -10612,7 +10612,7 @@
     },
     {
       "A": "Caceres",
-      "B": "Gordo,El",
+      "B": "Gordo",
       "D": "0.04639175257731959"
     },
     {
@@ -10672,7 +10672,7 @@
     },
     {
       "A": "Zamora",
-      "B": "Cubo de Tierra del Vino,El",
+      "B": "Cubo de Tierra del Vino",
       "D": "0.04610951008645533"
     },
     {
@@ -10847,7 +10847,7 @@
     },
     {
       "A": "Toledo",
-      "B": "Romeral,El",
+      "B": "Romeral",
       "D": "0.0452418096723869"
     },
     {
@@ -10957,7 +10957,7 @@
     },
     {
       "A": "Salamanca",
-      "B": "Pino de Tormes,El",
+      "B": "Pino de Tormes",
       "D": "0.044585987261146494"
     },
     {
@@ -11127,12 +11127,12 @@
     },
     {
       "A": "Segovia",
-      "B": "Huertos,Los",
+      "B": "Huertos",
       "D": "0.04371584699453552"
     },
     {
       "A": "Zamora",
-      "B": "Maderal,El",
+      "B": "Maderal",
       "D": "0.043689320388349516"
     },
     {
@@ -11337,7 +11337,7 @@
     },
     {
       "A": "La Rioja",
-      "B": "Redal,El",
+      "B": "Redal",
       "D": "0.04285714285714286"
     },
     {
@@ -11527,7 +11527,7 @@
     },
     {
       "A": "Avila",
-      "B": "Llanos de Tormes,Los",
+      "B": "Llanos de Tormes",
       "D": "0.041666666666666664"
     },
     {
@@ -11812,7 +11812,7 @@
     },
     {
       "A": "Avila",
-      "B": "Oso,El",
+      "B": "Oso",
       "D": "0.04046242774566474"
     },
     {
@@ -11947,7 +11947,7 @@
     },
     {
       "A": "Burgos",
-      "B": "Ausines,Los",
+      "B": "Ausines",
       "D": "0.04"
     },
     {
@@ -12492,7 +12492,7 @@
     },
     {
       "A": "Zamora",
-      "B": "Perdigón,El",
+      "B": "Perdigón",
       "D": "0.0375"
     },
     {
@@ -12547,7 +12547,7 @@
     },
     {
       "A": "Zamora",
-      "B": "Piñero,El",
+      "B": "Piñero",
       "D": "0.0371900826446281"
     },
     {
@@ -13312,7 +13312,7 @@
     },
     {
       "A": "Teruel",
-      "B": "Cuervo,El",
+      "B": "Cuervo",
       "D": "0.033707865168539325"
     },
     {
@@ -13382,7 +13382,7 @@
     },
     {
       "A": "Salamanca",
-      "B": "Tejado,El",
+      "B": "Tejado",
       "D": "0.03333333333333333"
     },
     {
@@ -13522,7 +13522,7 @@
     },
     {
       "A": "Zaragoza",
-      "B": "Frasno,El",
+      "B": "Frasno",
       "D": "0.03258145363408521"
     },
     {
@@ -13687,7 +13687,7 @@
     },
     {
       "A": "Guadalajara",
-      "B": "Cardoso de la Sierra,El",
+      "B": "Cardoso de la Sierra",
       "D": "0.031746031746031744"
     },
     {
@@ -13712,7 +13712,7 @@
     },
     {
       "A": "Salamanca",
-      "B": "Cerro,El",
+      "B": "Cerro",
       "D": "0.03167420814479638"
     },
     {
@@ -13897,7 +13897,7 @@
     },
     {
       "A": "Salamanca",
-      "B": "Sahugo,El",
+      "B": "Sahugo",
       "D": "0.030612244897959183"
     },
     {
@@ -13962,7 +13962,7 @@
     },
     {
       "A": "Leon",
-      "B": "Burgo Ranero,El",
+      "B": "Burgo Ranero",
       "D": "0.030104712041884817"
     },
     {
@@ -14207,7 +14207,7 @@
     },
     {
       "A": "Burgos",
-      "B": "Barrios de Bureba,Los",
+      "B": "Barrios de Bureba",
       "D": "0.028985507246376812"
     },
     {
@@ -14307,7 +14307,7 @@
     },
     {
       "A": "Toledo",
-      "B": "Puente del Arzobispo,El",
+      "B": "Puente del Arzobispo",
       "D": "0.02854938271604938"
     },
     {
@@ -14317,7 +14317,7 @@
     },
     {
       "A": "Soria",
-      "B": "Royo,El",
+      "B": "Royo",
       "D": "0.028469750889679714"
     },
     {
@@ -14522,7 +14522,7 @@
     },
     {
       "A": "Albacete",
-      "B": "Bonillo,El",
+      "B": "Bonillo",
       "D": "0.027247956403269755"
     },
     {
@@ -14597,7 +14597,7 @@
     },
     {
       "A": "Salamanca",
-      "B": "Manzano,El",
+      "B": "Manzano",
       "D": "0.02702702702702703"
     },
     {
@@ -14657,7 +14657,7 @@
     },
     {
       "A": "Avila",
-      "B": "Fresno,El",
+      "B": "Fresno",
       "D": "0.02680067001675042"
     },
     {
@@ -14672,7 +14672,7 @@
     },
     {
       "A": "Ciudad Real",
-      "B": "Cortijos,Los",
+      "B": "Cortijos",
       "D": "0.02676659528907923"
     },
     {
@@ -15287,7 +15287,7 @@
     },
     {
       "A": "Badajoz",
-      "B": "Santos de Maimona,Los",
+      "B": "Santos de Maimona",
       "D": "0.02445850571915308"
     },
     {
@@ -15307,7 +15307,7 @@
     },
     {
       "A": "Salamanca",
-      "B": "Milano,El",
+      "B": "Milano",
       "D": "0.024390243902439025"
     },
     {
@@ -15612,7 +15612,7 @@
     },
     {
       "A": "Avila",
-      "B": "Bohodón,El",
+      "B": "Bohodón",
       "D": "0.023076923076923078"
     },
     {
@@ -15692,7 +15692,7 @@
     },
     {
       "A": "Salamanca",
-      "B": "Tornadizo,El",
+      "B": "Tornadizo",
       "D": "0.022727272727272728"
     },
     {
@@ -15872,7 +15872,7 @@
     },
     {
       "A": "Leon",
-      "B": "Barrios de Luna,Los",
+      "B": "Barrios de Luna",
       "D": "0.022222222222222223"
     },
     {
@@ -16727,7 +16727,7 @@
     },
     {
       "A": "Salamanca",
-      "B": "Santos,Los",
+      "B": "Santos",
       "D": "0.018779342723004695"
     },
     {
@@ -16852,7 +16852,7 @@
     },
     {
       "A": "Avila",
-      "B": "Losar del Barco,El",
+      "B": "Losar del Barco",
       "D": "0.01834862385321101"
     },
     {
@@ -17612,7 +17612,7 @@
     },
     {
       "A": "Zaragoza",
-      "B": "Buste,El",
+      "B": "Buste",
       "D": "0.015625"
     },
     {
@@ -18012,7 +18012,7 @@
     },
     {
       "A": "Avila",
-      "B": "Parral,El",
+      "B": "Parral",
       "D": "0.013513513513513514"
     },
     {
@@ -18162,7 +18162,7 @@
     },
     {
       "A": "Zamora",
-      "B": "Pego,El",
+      "B": "Pego",
       "D": "0.012738853503184714"
     },
     {
@@ -18197,7 +18197,7 @@
     },
     {
       "A": "Salamanca",
-      "B": "Pedroso de la Armuña,El",
+      "B": "Pedroso de la Armuña",
       "D": "0.012605042016806723"
     },
     {
@@ -18262,7 +18262,7 @@
     },
     {
       "A": "Cuenca",
-      "B": "Hito,El",
+      "B": "Hito",
       "D": "0.012269938650306749"
     },
     {
@@ -18522,7 +18522,7 @@
     },
     {
       "A": "Soria",
-      "B": "Villares de Soria,Los",
+      "B": "Villares de Soria",
       "D": "0.01098901098901099"
     },
     {
@@ -18772,7 +18772,7 @@
     },
     {
       "A": "Burgos",
-      "B": "Altos,Los",
+      "B": "Altos",
       "D": "0.009900990099009901"
     },
     {
@@ -18802,7 +18802,7 @@
     },
     {
       "A": "Zaragoza",
-      "B": "Frago,El",
+      "B": "Frago",
       "D": "0.009900990099009901"
     },
     {
@@ -19257,7 +19257,7 @@
     },
     {
       "A": "Avila",
-      "B": "Mirón,El",
+      "B": "Mirón",
       "D": "0.0078125"
     },
     {
@@ -19332,7 +19332,7 @@
     },
     {
       "A": "Salamanca",
-      "B": "Campo de Peñaranda,El",
+      "B": "Campo de Peñaranda",
       "D": "0.0072992700729927005"
     },
     {
@@ -19392,7 +19392,7 @@
     },
     {
       "A": "Salamanca",
-      "B": "Maíllo,El",
+      "B": "Maíllo",
       "D": "0.006968641114982578"
     },
     {
@@ -19452,12 +19452,12 @@
     },
     {
       "A": "Salamanca",
-      "B": "Cubo de Don Sancho,El",
+      "B": "Cubo de Don Sancho",
       "D": "0.0064794816414686825"
     },
     {
       "A": "Cuenca",
-      "B": "Cañavate,El",
+      "B": "Cañavate",
       "D": "0.0064516129032258064"
     },
     {
@@ -20152,7 +20152,7 @@
     },
     {
       "A": "Badajoz",
-      "B": "Carrascalejo,El",
+      "B": "Carrascalejo",
       "D": "0"
     },
     {
@@ -20652,7 +20652,7 @@
     },
     {
       "A": "Cuenca",
-      "B": "Pozuelo,El",
+      "B": "Pozuelo",
       "D": "0"
     },
     {
@@ -20667,7 +20667,7 @@
     },
     {
       "A": "Cuenca",
-      "B": "Valdecolmenas,Los",
+      "B": "Valdecolmenas",
       "D": "0"
     },
     {
@@ -20822,7 +20822,7 @@
     },
     {
       "A": "Guadalajara",
-      "B": "Ordial,El",
+      "B": "Ordial",
       "D": "0"
     },
     {
@@ -20857,7 +20857,7 @@
     },
     {
       "A": "Guadalajara",
-      "B": "Recuenco,El",
+      "B": "Recuenco",
       "D": "0"
     },
     {
@@ -21882,7 +21882,7 @@
     },
     {
       "A": "Teruel",
-      "B": "Castellar,El",
+      "B": "Castellar",
       "D": "0"
     },
     {
