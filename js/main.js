@@ -2,7 +2,7 @@
 'use strict';
 
 $(document).ready(function(){
-
+	$(".myHeight").css("height","100px");
 	$(window).scroll(function(){
 		var barra = $(window).scrollTop();
 		var posicion =  (barra * 0.04);
@@ -142,6 +142,45 @@ function onScroll(event) {
 		}
 	});
 }
+
+// Mostrar datos
+var inputElement = document.getElementById('input');
+var buttonElement = document.getElementById('button_show');
+var percentageElement = document.getElementById('percentage');
+var request = new XMLHttpRequest();
+var municipioFound = false;
+// para crear servidor local "python -m SimpleHTTPServer" en la terminal
+
+
+function Consulthabitants(){
+	var ObjJson = 'http://127.0.0.1:3000/convertcsv.json';
+	request.open('GET', ObjJson, true);
+
+	request.onload = function() {
+		var showdata = JSON.parse(request.responseText);
+		for (var i = 0; i < showdata.Datos.length; i++) {
+			var townName = showdata.Datos[i].B;
+
+			if (inputElement.value.toLowerCase() === townName.toLowerCase()) {
+				percentageElement.innerHTML = Math.round(showdata.Datos[i].D * 100) + '%';
+				municipioFound = true;
+			}
+		}
+
+		if (!municipioFound) {
+			percentageElement.innerHTML = 'No hay datos de este municipio.';
+		}
+	}
+
+	request.onerror = function() {
+		console.log('Error al tratar de conectarse con el servidor');
+	};
+
+	request.send();
+}
+
+buttonElement.addEventListener('click', Consulthabitants);
+
 
 //Flecha para subir arriba en versión móvil
 

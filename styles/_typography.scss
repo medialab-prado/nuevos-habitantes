@@ -8,6 +8,12 @@ h1 {
   color: $secundary-color;
 }
 
+p,
+#percentage,
+#input {
+  color: $color-text;
+}
+
 h1,
 h2 {
   line-height: 1em;
@@ -30,6 +36,7 @@ h3 {
 }
 
 p {
+  font-family: $default-font-family-lowercase;
   font-size: 1em;
   line-height: 1.3em;
   margin-top: 20px;
@@ -43,6 +50,18 @@ hr {
  height:3px;
  width: 30%;
  border:none;
+}
+
+#percentage {
+  font-family: $default-font-family-lowercase;
+  color: $color-title;
+  font-size: 4em;
+  margin: 40px;
+}
+
+small,
+#input {
+  font-family: $default-font-family-lowercase;
 }
 
 @media (min-width:768px) {

@@ -85,13 +85,21 @@
     </article>
 
     <article class="box-article">
-      <h2>¿De dónde vienen?</h2>
-      <hr>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
 
-      <a href="datos.html"><button class="btn" type="button" name="button">LEER MÁS</button></a>
+      <div class="showdata">
+        <h2 class="font">¿Quieres saber cuántos vecinos tienes?</h2>
+        <hr>
+        <p>
+          Conoce el porcentaje de habitantes extranjeros que ha crecido tu población, escribe el nombre de tu municipio y compruébalo:
+        </p>
+        <div class="town">
+          <input id="input" type="text" min="0" max="100" placeholder="Nombre municipio">
+          <button id="button_show" class="btn" type="button">Cuántos vecinos tienes</button>
+        </div>
+        <span id="percentage">%</span>
+        <small>* Datos procedentes del INE Padrón Continuo a 1 de enero de 2016.</small>
+      </div>
+
     </article>
   </div>
 

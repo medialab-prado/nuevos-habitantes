@@ -6,6 +6,11 @@ h3 {
 h1 {
   color: white; }
 
+p,
+#percentage,
+#input {
+  color: #3b4444; }
+
 h1,
 h2 {
   line-height: 1em; }
@@ -24,6 +29,7 @@ h3 {
   font-family: "Merriweather", serif; }
 
 p {
+  font-family: "Merriweather", serif;
   font-size: 1em;
   line-height: 1.3em;
   margin-top: 20px;
@@ -36,6 +42,16 @@ hr {
   height: 3px;
   width: 30%;
   border: none; }
+
+#percentage {
+  font-family: "Merriweather", serif;
+  color: #5e6f5f;
+  font-size: 4em;
+  margin: 40px; }
+
+small,
+#input {
+  font-family: "Merriweather", serif; }
 
 @media (min-width: 768px) {
   hr {
@@ -439,7 +455,7 @@ body {
   width: 100%;
   max-width: 980px;
   margin: auto;
-  padding: 0% 5%;
+  padding: 5% 5%;
   -webkit-box-shadow: 0 5px 5px 3px rgba(0, 0, 0, 0.25);
           box-shadow: 0 5px 5px 3px rgba(0, 0, 0, 0.25);
   background: white; }
@@ -466,6 +482,27 @@ body {
 .text-border {
   padding: 4%;
   border-bottom: 0.5px solid #666666; }
+
+input {
+  height: 30px;
+  text-align: center;
+  font-size: 16px;
+  margin: 20px 30px; }
+
+.showdata {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.town {
+  display: inline-block; }
 
 @media (min-width: 768px) {
   .container {
@@ -586,4 +623,5 @@ footer {
 
   .posts-container article {
     max-width: 50%; } }
+
 /*# sourceMappingURL=index.css.map */
