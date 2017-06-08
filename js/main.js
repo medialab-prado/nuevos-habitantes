@@ -153,7 +153,7 @@ var municipioFound = false;
 
 
 function Consulthabitants(){
-	var ObjJson = 'https://github.com/Adalab/ADAORBIT/blob/master/js/convertcsv.json';
+	var ObjJson = 'https://adalab.github.io/ADAORBIT/js/convertcsv.json';
 	request.open('GET', ObjJson, true);
 
 	request.onload = function() {
