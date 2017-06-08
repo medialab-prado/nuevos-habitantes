@@ -11,6 +11,10 @@ p,
 #input {
   color: #3b4444; }
 
+small {
+  padding-top: 40px;
+  color: #ccc99c; }
+
 h1,
 h2 {
   line-height: 1em; }
@@ -623,4 +627,5 @@ footer {
 
   .posts-container article {
     max-width: 50%; } }
+
 /*# sourceMappingURL=index.css.map */
