@@ -93,10 +93,10 @@ function positionMenu() {
 
 $(document).ready(function () {
 	$(document).on("scroll", onScroll);
-	$('a[href^="#"]').on('click', function (e) {
+	$('.submenu-data-links[href^="#"]').on('click', function (e) {
 		e.preventDefault();
 		$(document).off("scroll");
-		$('a').each(function () {
+		$('.submenu-data-links').each(function () {
 			$(this).removeClass('active');
 		})
 		$(this).addClass('active');
@@ -129,11 +129,11 @@ function reactiveScroll(event) {
 
 function onScroll(event) {
 	var scrollPos = $(document).scrollTop();
-	$('.submenu-data a').each(function () {
+	$('.submenu-data-links').each(function () {
 		var currLink = $(this);
 		var refElement = $(currLink.attr("href")); //$("#como") => el div (ID=como)
 		if ((refElement.position().top <= scrollPos) && (refElement.position().top + refElement.height() > scrollPos)) {
-			$('.submenu-data a').removeClass("active");
+			$('.submenu-data-links').removeClass("active");
 			currLink.addClass("active");
 		}
 		else {

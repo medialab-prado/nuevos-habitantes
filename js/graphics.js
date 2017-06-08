@@ -32,12 +32,14 @@ function Consulthabitants(){
 
 			if (inputElement.value.toLowerCase() === townName.toLowerCase()) {
 				percentageElement.innerHTML = Math.round(showdata.Datos[i].D * 100) + '%';
+				percentage.style.fontSize = "4em";
 				municipioFound = true;
 			}
 		}
 
 		if (!municipioFound) {
 			percentageElement.innerHTML = 'No hay datos de este municipio.';
+			percentage.style.fontSize = "2em";
 		}
 	}
 

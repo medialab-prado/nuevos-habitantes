@@ -51,6 +51,7 @@ hr {
   font-family: "Merriweather", serif;
   color: #5e6f5f;
   font-size: 4em;
+  line-height: 1.5;
   margin: 40px; }
 
 small,
@@ -236,6 +237,7 @@ body {
 
 .nav-small-link {
   text-decoration: none;
+  font-family: "Source Sans Pro", sans-serif;
   text-transform: uppercase;
   font-size: 1em;
   color: black;
@@ -627,5 +629,4 @@ footer {
 
   .posts-container article {
     max-width: 50%; } }
-
 /*# sourceMappingURL=index.css.map */
