@@ -300,11 +300,11 @@ body {
   visibility: hidden; }
 
 .up-page {
-  width: 30px;
+  width: 65px;
   position: fixed;
   display: none;
-  bottom: 30px;
-  right: 40px;
+  bottom: 20px;
+  right: 10px;
   cursor: pointer; }
 
 @media (min-width: 768px) {
@@ -623,5 +623,4 @@ footer {
 
   .posts-container article {
     max-width: 50%; } }
-
 /*# sourceMappingURL=index.css.map */
