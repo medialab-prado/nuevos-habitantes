@@ -67,6 +67,7 @@ body {
 .btn {
   width: 250px;
   height: 60px;
+  cursor: pointer;
   background-color: white;
   color: #5d6836;
   border: 4px solid #5d6836;
@@ -130,7 +131,8 @@ body {
           transform: translateY(-40%); }
 .p-title {
   -webkit-animation: fadeFromTop 5s;
-          animation: fadeFromTop 5s; }
+          animation: fadeFromTop 5s;
+  color: white; }
 
 .img-arrow {
   margin-top: 20px;
@@ -584,4 +586,5 @@ footer {
 
   .posts-container article {
     max-width: 50%; } }
+
 /*# sourceMappingURL=index.css.map */
