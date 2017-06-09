@@ -75,16 +75,13 @@ function positionMenu() {
 	if ($(window).scrollTop() >= headerHeight){
 		$('.header-content').addClass('fixed');
 		$('.nav').css('width', '90%');
-		// $('.container').css('margin-top', (menuHeight) + 'px');
 	} else if ($(window).scrollTop() >= sectionHeight){
 		$('.header-content').addClass('fixed');
 		$('.nav').css('width', '90%');
-		// $('.container').css('margin-top', (menuHeight) + 'px');
 		$('.main-test-title').css('margin-top', (menuHeight) + 'px');
 	} else {
 		$('.header-content').removeClass('fixed');
 		$('.nav').css('width', '100%');
-		// $('.container').css('margin-top', '0');
 		$('.main-test-title').css('margin-top', '0');
 	}
 }
@@ -92,8 +89,8 @@ function positionMenu() {
 //Segunda barra de navegación-datos active
 
 $(document).ready(function () {
-	$(document).on("scroll", onScroll);
-	$('.submenu-data-links[href^="#"]').on('click', function (e) {
+	$(document).on("scroll", onScroll);// le añade la función onScroll al evento scroll del document
+	$('.submenu-data-links').on('click', function (e) {// a los <a> le añade el evento click y ejecuta la funcion cuando le das click
 		e.preventDefault();
 		$(document).off("scroll");
 		$('.submenu-data-links').each(function () {
@@ -101,9 +98,9 @@ $(document).ready(function () {
 		})
 		$(this).addClass('active');
 
-		var target = this.hash,
-		menu = target;
-		target = $(target);
+		var target = this.hash;//#de-donde
+
+		target = $(target);// target = $("#de-donde");
 
 		var MenutoContainerPx = 200;
 		if($(".header-content").attr("class").indexOf("fixed") != -1){
@@ -114,26 +111,24 @@ $(document).ready(function () {
 			'scrollTop': target.offset().top - MenutoContainerPx},
 			500,
 			'swing', function () {
-				window.location.hash = target;
 				$(document).on("scroll", reactiveScroll);
 			}
 		);
 	});
 });
 
-
+//Reactivar onScroll
 function reactiveScroll(event) {
 	$(document).on("scroll", onScroll);
 }
 
-
+//Cambiar el color de los <a> según vas bajando o subiendo.
 function onScroll(event) {
-	var scrollPos = $(document).scrollTop();
-	$('.submenu-data-links').each(function () {
+	var scrollPos = $(document).scrollTop();// la altura de la web en la que se encuentra el scroll
+	$('.submenu-data-links').each(function () {// va pasandole a la funcion cada uno de los elementos del "array"
 		var currLink = $(this);
-		var refElement = $(currLink.attr("href")); //$("#como") => el div (ID=como)
+		var refElement = $(currLink.attr("href")); //$("#como") => el div (ID=como).El div que corresponde a cada etiqueta del menu
 		if ((refElement.position().top <= scrollPos) && (refElement.position().top + refElement.height() > scrollPos)) {
-			$('.submenu-data-links').removeClass("active");
 			currLink.addClass("active");
 		}
 		else {
