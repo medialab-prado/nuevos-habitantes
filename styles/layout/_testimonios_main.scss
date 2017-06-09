@@ -7,6 +7,7 @@
   margin: auto;
   background-color: $secundary-color;
   text-align: center;
+  box-shadow:0 5px 5px 3px rgba(0, 0, 0, 0.25);
 }
 
 .posts-container {
@@ -15,6 +16,7 @@
   flex-wrap: wrap;
   max-width: 980px;
   margin: auto;
+  box-shadow:0 5px 5px 3px rgba(0, 0, 0, 0.25);
 }
 
 .posts-container article {
