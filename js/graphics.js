@@ -1,3 +1,5 @@
+'use strict';
+
 // GRAFICOS TABLEAU
 
 // para que aparezca por debajo del menú fixed
@@ -10,6 +12,10 @@ setTimeout(function() {
 	}
 }, 1000);
 
+//Cambiar altura gráfico
+$(document).ready(function(){
+	$(".myHeight").css("height","100px");
+});
 
 
 // Mostrar datos
