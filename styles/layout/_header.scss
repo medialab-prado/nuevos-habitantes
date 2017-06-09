@@ -116,7 +116,7 @@
   padding-bottom: 20px;
 }
 
-/*Submenú de datos*/
+/*Submenú versión móvil (subnav)*/
 .subnav-a{
   display: flex;
   align-items: baseline;
@@ -152,7 +152,7 @@
 .subnav-links{
   text-transform: uppercase;
   text-decoration: none;
-  font-size: 1em;
+  font-size: 0.9em;
   color: black;
   display: block;
   padding-top: 10px;
@@ -166,7 +166,6 @@
 .submenu-data{
   display:none;
 }
-
 
 .anchor {
   display: block;
