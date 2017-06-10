@@ -1,23 +1,23 @@
-'use strict';
+"use strict";
 
 // GRAFICOS TABLEAU
 
 // para que aparezca por debajo del menú fixed
 setTimeout(function() {
-	var tableauIframeList = document.querySelectorAll('iframe');
-	for (var i = 0; i < tableauIframeList.length; i++) {
-		var tableauIframe = tableauIframeList[i];
-		var src = tableauIframe.getAttribute('src');
-		tableauIframe.setAttribute('src', src + '?wmode=transparent');
-	}
+  var tableauIframeList = document.querySelectorAll("iframe");
+  for (var i = 0; i < tableauIframeList.length; i++) {
+    var tableauIframe = tableauIframeList[i];
+    var src = tableauIframe.getAttribute("src");
+    tableauIframe.setAttribute("src", src + "?wmode=transparent");
+  }
 }, 1000);
 
 //Cambiar altura gráfico
-$(document).ready(function(){
-	$(".myHeight").css("height","100px");
+$(document).ready(function() {
+  $(".myHeight").css("height", "100px");
 });
 
-
+/*
 // Mostrar datos
 var inputElement = document.getElementById('input');
 var buttonElement = document.getElementById('button_show');
@@ -57,3 +57,4 @@ function Consulthabitants(){
 }
 
 buttonElement.addEventListener('click', Consulthabitants);
+*/
