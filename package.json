@@ -1,0 +1,26 @@
+{
+  "name": "nuevoshabitantes",
+  "version": "1.0.0",
+  "description": "Página web del proyecto de os nuevos habitantes de la España vacia",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lowfill/nuevoshabitantes.git"
+  },
+  "keywords": [
+    "españa",
+    "migracion"
+  ],
+  "author": "Equipo Nuevos Habitantes de la España Vacía",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lowfill/nuevoshabitantes/issues"
+  },
+  "homepage": "https://github.com/lowfill/nuevoshabitantes#readme",
+  "dependencies": {
+    "d3": "^4.9.1"
+  }
+}
