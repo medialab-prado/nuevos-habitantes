@@ -26,8 +26,8 @@ jQuery(document).ready(function() {
     .treemap()
     .size([width, height])
     .padding(1)
-    .tile(d3.treemapBinary)
-    .round(true);
+    .tile(d3.treemapResquarify);
+  //.round(true);
 
   d3.csv(
     "data/2016_poblacion_area_geografica.csv",
@@ -59,7 +59,7 @@ jQuery(document).ready(function() {
       cell
         .append("rect")
         .attr("id", function(d) {
-          return d.id;
+          return normalize(d.id);
         })
         .attr("width", function(d) {
           return d.x1 - d.x0;
@@ -84,14 +84,21 @@ cell.append("clipPath")
       });
 
       label.append("tspan").attr("x", 4).attr("y", 13).text(function(d) {
-        return d.data.area_geografica.substring(
-          d.data.area_geografica.lastIndexOf("/") + 1,
-          d.data.area_geografica.length
-        );
+        var r = d3.select("#" + normalize(d.id)).attr("width");
+        if (r > 25) {
+          return d.data.area_geografica.substring(
+            d.data.area_geografica.lastIndexOf("/") + 1,
+            d.data.area_geografica.length
+          );
+        }
+        return "";
       });
 
       label.append("tspan").attr("x", 4).attr("y", 25).text(function(d) {
-        return format(d.value);
+        var r = d3.select("#" + normalize(d.id)).attr("width");
+        if (r > 25) {
+          return format(d.value);
+        }
       });
 
       cell.append("title").text(function(d) {
@@ -101,7 +108,8 @@ cell.append("clipPath")
             d.data.area_geografica.length
           ) +
           "\n" +
-          format(d.value)
+          format(d.value) +
+          " personas"
         );
       });
     }
@@ -110,5 +118,26 @@ cell.append("clipPath")
   function type(d) {
     d.value = +d.value;
     return d;
+  }
+  function normalize(str) {
+    var from =
+      "1234567890ÃÀÁÄÂÈÉËÊÌÍÏÎÒÓÖÔÙÚÜÛãàáäâèéëêìíïîòóöôùúüûÑñÇç '/&().!",
+      to = "izeasgtogoAAAAAEEEEIIIIOOOOUUUUaaaaaeeeeiiiioooouuuunncc_____",
+      mapping = {};
+
+    for (var i = 0, j = from.length; i < j; i++) {
+      mapping[from.charAt(i)] = to.charAt(i);
+    }
+
+    var ret = [];
+    for (var i = 0, j = str.length; i < j; i++) {
+      var c = str.charAt(i);
+      if (mapping.hasOwnProperty(str.charAt(i))) {
+        ret.push(mapping[c]);
+      } else {
+        ret.push(c);
+      }
+    }
+    return ret.join("").toLowerCase();
   }
 });

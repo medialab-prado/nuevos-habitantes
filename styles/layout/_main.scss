@@ -10,6 +10,16 @@
 .box-article {
   text-align: center;
   padding-top: 5%;
+  p {
+    text-align: justify;
+  }
+  ul{
+    margin: 0 10%;
+  }
+  li{
+    text-align: left;
+    font-family: $default-font-family-lowercase;
+  }
 }
 
 .section-container {
@@ -48,6 +58,21 @@ input {
   justify-content: center;
 }
 
+.viz{
+  display: block;
+  margin: 0 1em;
+  h3{
+    font-size: 80%;
+  }
+  a {
+    text-decoration: none;
+  }
+  .footer{
+    text-align: right;
+    font-size: small;
+    font-style: italic;
+  }
+}
 .town {
   display: inline-block;
 }
