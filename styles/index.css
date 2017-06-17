@@ -493,16 +493,19 @@ input {
 .town {
   display: inline-block; }
 
-img.izquierda {
-  float: left;
-  width: 50%;
-  margin: 0 1em 0 0; }
+.img-container .img-common {
+  margin: 0; }
 
-img.derecha {
+.img-container.derecha {
   float: right;
   width: 50%;
   margin: 0 0 0 1em;
   clear: both; }
+
+.img-container.izquierda {
+  float: left;
+  width: 50%;
+  margin: 0 1em 0 0; }
 
 @media (min-width: 768px) {
   .container {
