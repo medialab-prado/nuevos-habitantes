@@ -6,6 +6,8 @@
   <title>Home | Los nuevos habitantes de la España Vacía</title>
   <link rel="stylesheet" href="styles/index.css">
   <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/3.5.4/select2.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/nvd3/1.8.5/nv.d3.css" />
   <link href="https://fonts.googleapis.com/css?family=Merriweather:300|Source+Sans+Pro:900" rel="stylesheet">
 
 </head>
@@ -17,7 +19,9 @@
     <h1 class="title-home">Los nuevos habitantes de la España Vacía</h1>
 
     <p class="p-title">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+      et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+      ut aliquip ex ea commodo consequat.
     </p>
     <a href="#arrow-down"><img class="img-arrow" src="images/down-arrow.png" alt="arrow image"></a>
   </div>
@@ -78,8 +82,11 @@
       <h2>¿Quiénes son?</h2>
       <hr>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-        in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+        ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+        esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+        sunt in culpa qui officia deserunt mollit anim id est laborum.
       </p>
       <img class="img-common" src="images/foto-parallax.jpg" alt="foto quienes son">
 
@@ -89,106 +96,131 @@
     <article class="box-article">
 
       <div class="showdata">
-        <h2 class="font">¿Quieres saber cuántos vecinos tienes?</h2>
+        <h2 class="font">¿Quieres saber de dónde vienen tus vecinos?</h2>
         <hr>
         <p>
-          Conoce el porcentaje de habitantes extranjeros que ha crecido tu población, escribe el nombre de tu municipio y compruébalo:
+
+          Si vives en Castilla-La Mancha, Castilla-León, Extremadura, Aragón o la Rioja escribe el nombre de tu
+          municipio y conoce el porcentaje de habitantes extranjeros que hay en tu pueblo.
         </p>
-        <div class="town">
-          <input id="input" type="text" min="0" max="100" placeholder="Nombre municipio">
-          <button id="button_show" class="btn" type="button">Cuántos vecinos tienes</button>
+        <div class="viz interactivo">
+          <input id="municipio" type="text" min="0" max="100" placeholder="Nombre municipio">
+          <br><br>
+          <div class="loader">Sin datos</div>
+          <div id='porcentaje_ext' class="pie" style="display:none">
+            <h3>Total población</h3>
+            <svg style='height:300px;width:100%'> </svg>
+          </div>
+          <div id='porcentaje_pob' class="pie" style="display:none">
+            <h3>Distribución extranjeros</h3>
+            <svg style='height:300px;width:100%'> </svg>
+          </div>
+          <div class="footer" style="display:none">
+            Fuente: <a href="http://www.ine.es/dyngs/INEbase/es/operacion.htm?c=Estadistica_C&cid=1254736177012&menu=resultados&secc=1254736195461&idp=1254734710990">Instituto Nacional de Estadística - Información Padrón Continuo 2016</a>
+          </div>
         </div>
-        <span id="percentage">%</span>
-        <small>* Datos procedentes del INE Padrón Continuo a 1 de enero de 2016.</small>
-      </div>
 
     </article>
-  </div>
-
-  <div class="main-test-title">
-    <h2>Reportajes</h2>
-    <hr>
-  </div>
-
-  <div class="posts-container">
-    <article class="post-article">
-      <header>
-        <h3><a href="#">Reportaje 1<br>
-          ipsum faucibus</a></h3>
-      </header>
-      <a href="#"><img src="images/foto-parallax.jpg" alt="Foto del reportaje" /></a>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <a href="reportaje1.html"><button class="btn btn-web" type="button" name="button">Leer más</button></a>
-    </article>
-
-    <article class="post-article">
-      <header>
-        <h3><a href="#">Reportaje 2<br>
-            ipsum faucibus</a></h3>
-      </header>
-      <a href="#"><img src="images/foto-parallax.jpg" alt="Foto del reportaje" /></a>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <a href="reportaje2.html"><button class="btn btn-web" type="button" name="button">Leer más</button></a>
-    </article>
-
-    <article class="post-article">
-      <header>
-        <h3><a href="#">Reportaje 3<br>
-              ipsum faucibus</a></h3>
-      </header>
-      <a href="#"><img src="images/foto-parallax.jpg" alt="Foto del reportaje" /></a>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <a href="reportaje3.html"><button class="btn btn-web" type="button" name="button">Leer más</button></a>
-    </article>
-
-    <article class="post-article">
-      <header>
-        <h3><a href="#">Reportaje 4<br>
-                ipsum faucibus</a></h3>
-      </header>
-      <a href="#"><img src="images/foto-parallax.jpg" alt="Foto del reportaje" /></a>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <a href="reportaje4.html"><button class="btn btn-web" type="button" name="button">Leer más</button></a>
-    </article>
-  </div>
-
-  <div class="container">
-
-    <article class="box-article">
-
-      <h2>¿Dónde están?</h2>
-      <hr>
-      <img class="img-common" src="images/foto-parallax.jpg" alt="mapa">
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-        in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-        in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
-
-      <a href="datos.html"><button class="btn" type="button" name="button">LEER MÁS</button></a>
-
-    </article>
-
-  </div>
-
-  <span class="up-page"><img class="icon-up" src="images/icon-up.png" alt="Icono subida"></span>
-
-  <footer>
-    <div class="icons-footer">
-      <img class="icon-social" src="images/twitter-logo.png" alt="logo twitter">
-      <img class="icon-social" src="images/instagram-logo.png" alt="logo instagram">
-      <img class="icon-social" src="images/github-logo.png" alt="logo gitHub">
-      <img class="icon-social" src="images/facebook-logo.png" alt="logo facebook">
     </div>
-    <h4 class="text-footer">All Rights Reserved 2017</h4>
-  </footer>
 
-  <script src="js/jquery.min.js" charset="utf-8"></script>
-  <script src="js/graphics.js" charset="utf-8"></script>
-  <script src="js/main.js" charset="utf-8"></script>
+    <div class="main-test-title">
+      <h2>Reportajes</h2>
+      <hr>
+    </div>
+
+    <div class="posts-container">
+      <article class="post-article">
+        <header>
+          <h3><a href="#">Reportaje 1<br>
+          ipsum faucibus</a></h3>
+        </header>
+        <a href="#"><img src="images/foto-parallax.jpg" alt="Foto del reportaje" /></a>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+          labore et dolore magna aliqua.</p>
+        <a href="reportaje1.html"><button class="btn btn-web" type="button" name="button">Leer más</button></a>
+      </article>
+
+      <article class="post-article">
+        <header>
+          <h3><a href="#">Reportaje 2<br>
+            ipsum faucibus</a></h3>
+        </header>
+        <a href="#"><img src="images/foto-parallax.jpg" alt="Foto del reportaje" /></a>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+          labore et dolore magna aliqua.</p>
+        <a href="reportaje2.html"><button class="btn btn-web" type="button" name="button">Leer más</button></a>
+      </article>
+
+      <article class="post-article">
+        <header>
+          <h3><a href="#">Reportaje 3<br>
+              ipsum faucibus</a></h3>
+        </header>
+        <a href="#"><img src="images/foto-parallax.jpg" alt="Foto del reportaje" /></a>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+          labore et dolore magna aliqua.</p>
+        <a href="reportaje3.html"><button class="btn btn-web" type="button" name="button">Leer más</button></a>
+      </article>
+
+      <article class="post-article">
+        <header>
+          <h3><a href="#">Reportaje 4<br>
+                ipsum faucibus</a></h3>
+        </header>
+        <a href="#"><img src="images/foto-parallax.jpg" alt="Foto del reportaje" /></a>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+          labore et dolore magna aliqua.</p>
+        <a href="reportaje4.html"><button class="btn btn-web" type="button" name="button">Leer más</button></a>
+      </article>
+    </div>
+
+    <div class="container">
+
+      <article class="box-article">
+
+        <h2>¿Dónde están?</h2>
+        <hr>
+        <img class="img-common" src="images/foto-parallax.jpg" alt="mapa">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+          et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+          velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+          sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+          et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+          velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+          sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+
+        <a href="datos.html"><button class="btn" type="button" name="button">LEER MÁS</button></a>
+
+      </article>
+
+    </div>
+
+    <span class="up-page"><img class="icon-up" src="images/icon-up.png" alt="Icono subida"></span>
+
+    <footer>
+      <div class="icons-footer">
+        <img class="icon-social" src="images/twitter-logo.png" alt="logo twitter">
+        <img class="icon-social" src="images/instagram-logo.png" alt="logo instagram">
+        <img class="icon-social" src="images/github-logo.png" alt="logo gitHub">
+        <img class="icon-social" src="images/facebook-logo.png" alt="logo facebook">
+      </div>
+      <h4 class="text-footer">All Rights Reserved 2017</h4>
+    </footer>
+
+    <script src="js/jquery.min.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/3.5.4/select2.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/3.5.4/select2_locale_es.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/nvd3/1.8.5/nv.d3.js"></script>
+    <script src="js/graphics.js" charset="utf-8"></script>
+    <script src="js/main.js" charset="utf-8"></script>
 
 </body>
 
