@@ -484,9 +484,22 @@ input {
     text-align: right;
     font-size: small;
     font-style: italic; }
+  .viz .pie {
+    float: left;
+    width: 50%; }
+  .viz .loader {
+    height: 300px; }
 
 .town {
   display: inline-block; }
+
+.izquierda {
+  float: left;
+  width: 50%; }
+
+.derecha {
+  float: left;
+  width: 50%; }
 
 @media (min-width: 768px) {
   .container {
