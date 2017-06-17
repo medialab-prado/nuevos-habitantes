@@ -17,44 +17,120 @@ $(document).ready(function() {
   $(".myHeight").css("height", "100px");
 });
 
-/*
-// Mostrar datos
-var inputElement = document.getElementById('input');
-var buttonElement = document.getElementById('button_show');
-var percentageElement = document.getElementById('percentage');
-var request = new XMLHttpRequest();
-var municipioFound = false;
-// para crear servidor local "python -m SimpleHTTPServer" en la terminal
+$(document).ready(function() {
+  if ($("#municipio").length > 0) {
+    var municipios = [];
+    var dsv = d3.dsv(";", "text/plain");
 
+    dsv("data/2016.csv", function(err, data) {
+      data.forEach(function(mun) {
+        municipios.push({ id: mun.Cod, text: mun.Municipio });
+      });
 
-function Consulthabitants(){
-	var ObjJson = 'https://adalab.github.io/ADAORBIT/js/convertcsv.json';
-	request.open('GET', ObjJson, true);
+      $("#municipio").select2({
+        data: municipios,
+        width: 300,
+        placeholder: "Nombre municipio"
+      });
+      $("#municipio").on("change", function(e) {
+        console.log(e);
+        console.log($(e.target).val());
+        $(".pie").show();
+        $(".footer").show();
+        $(".loader").hide();
+        data.forEach(function(municipio) {
+          if (municipio.Cod == e.val || $(e.target).val() == municipio.Cod) {
+            var datum1 = [];
+            var datum2 = [];
+            var total_habitantes = parseInt(municipio.Total_Poblacion);
+            var total_extranjeros = parseInt(municipio.Nacidos_NO_ES);
+            datum1.push({
+              label: "Nacionales",
+              value: parseInt(municipio.Nacidos_ES)
+            });
+            datum1.push({
+              label: "Extranjeros",
+              value: parseInt(municipio.Nacidos_NO_ES)
+            });
 
-	request.onload = function() {
-		var showdata = JSON.parse(request.responseText);
-		for (var i = 0; i < showdata.Datos.length; i++) {
-			var townName = showdata.Datos[i].B;
+            for (var key in municipio) {
+              if (
+                municipio.hasOwnProperty(key) &&
+                key != "Cod" &&
+                key != "Provincia" &&
+                key != "Municipio" &&
+                key != "Nacidos_ES" &&
+                key != "Nacidos_NO_ES" &&
+                key.indexOf("Total") < 0
+              ) {
+                if (parseInt(municipio[key]) > 0) {
+                  datum2.push({
+                    label: key,
+                    value: parseInt(municipio[key])
+                  });
+                }
+              }
+            }
+            nv.addGraph(function() {
+              var chart = nv.models
+                .pieChart()
+                .x(function(d) {
+                  return d.label;
+                })
+                .y(function(d) {
+                  return d.value;
+                })
+                .title("Total población")
+                .margin({
+                  top: 10
+                })
+                .showLegend(false)
+                .showTooltipPercent(true)
+                .valueFormat(function(d) {
+                  return d3.format(",.0f")(d) + " personas";
+                });
 
-			if (inputElement.value.toLowerCase() === townName.toLowerCase()) {
-				percentageElement.innerHTML = Math.round(showdata.Datos[i].D * 100) + '%';
-				percentage.style.fontSize = "4em";
-				municipioFound = true;
-			}
-		}
+              d3
+                .select("#porcentaje_ext svg")
+                .datum(datum1)
+                .transition()
+                .duration(350)
+                .call(chart);
 
-		if (!municipioFound) {
-			percentageElement.innerHTML = 'No hay datos de este municipio.';
-			percentage.style.fontSize = "2em";
-		}
-	}
+              return chart;
+            });
 
-	request.onerror = function() {
-		console.log('Error al tratar de conectarse con el servidor');
-	};
+            nv.addGraph(function() {
+              var chart = nv.models
+                .pieChart()
+                .x(function(d) {
+                  return d.label;
+                })
+                .y(function(d) {
+                  return d.value;
+                })
+                .margin({
+                  top: 10
+                })
+                .showLegend(false)
+                .valueFormat(function(d) {
+                  return d3.format(",.0f")(d) + " personas";
+                })
+                .showTooltipPercent(true);
 
-	request.send();
-}
+              d3
+                .select("#porcentaje_pob svg")
+                .datum(datum2)
+                .transition()
+                .duration(350)
+                .call(chart);
 
-buttonElement.addEventListener('click', Consulthabitants);
-*/
+              return chart;
+            });
+          }
+        });
+      });
+      $("#municipio").val("10180").trigger("change");
+    });
+  }
+});
