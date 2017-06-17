@@ -72,9 +72,27 @@ input {
     font-size: small;
     font-style: italic;
   }
+  .pie{
+    float:left;
+    width: 50%;
+  }
+  .loader{
+    height: 300px;
+  }
 }
 .town {
   display: inline-block;
+}
+img.izquierda{
+  float:left;
+  width: 50%;
+  margin: 0 1em 0 0;
+}
+img.derecha{
+  float:right;
+  width:50%;
+  margin: 0 0 0 1em;
+  clear:both;
 }
 
 @media (min-width:768px) {
