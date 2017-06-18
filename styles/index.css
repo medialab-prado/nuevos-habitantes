@@ -574,9 +574,11 @@ footer {
   display: block;
   border: 1px solid #ebead9;
   padding: 5%;
-  margin: auto;
   max-width: 100%;
-  background-color: white; }
+  background-color: white;
+  padding-bottom: 1em; }
+  .posts-container article header {
+    height: 5.5em; }
 
 .posts-container h3 {
   font-family: "Source Sans Pro", sans-serif;
@@ -607,7 +609,8 @@ footer {
     flex-direction: row; }
 
   .posts-container article {
-    max-width: 50%; } }
+    max-width: 50%;
+    /*min-height: 721px;*/ } }
 .adalab {
   text-align: center;
   padding: 2%;
