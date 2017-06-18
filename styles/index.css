@@ -49,7 +49,7 @@ p {
 hr {
   margin-top: 5px;
   margin-bottom: 50px;
-  background: #878670;
+  background: #ccc99c;
   height: 3px;
   width: 30%;
   border: none; }
@@ -353,7 +353,7 @@ body {
     background: rgba(255, 255, 255, 0.175); }
 
   .nav-link:hover {
-    color: #878670; }
+    color: #ccc99c; }
 
   .nav-item-active {
     background: white; }
@@ -362,7 +362,7 @@ body {
     color: #5d6836; }
 
   .nav-link-active:hover {
-    color: #878670;
+    color: #ccc99c;
     background: white; }
 
   .submenu-data {
@@ -396,7 +396,7 @@ body {
     left: 30px;
     right: 100%;
     bottom: 4px;
-    background: #878670;
+    background: #ccc99c;
     height: 3px;
     -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s; }
@@ -405,7 +405,7 @@ body {
     right: 30px; }
 
   .active {
-    color: #878670; }
+    color: #ccc99c; }
 
   .menu-small-content {
     display: none; }
@@ -479,7 +479,8 @@ input {
   .viz h3 {
     font-size: 80%; }
   .viz a {
-    text-decoration: none; }
+    text-decoration: none;
+    color: #3b4444; }
   .viz .footer {
     text-align: right;
     font-size: small;
