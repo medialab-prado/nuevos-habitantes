@@ -44,6 +44,16 @@ $(document).ready(function() {
             var datum2 = [];
             var total_habitantes = parseInt(municipio.Total_Poblacion);
             var total_extranjeros = parseInt(municipio.Nacidos_NO_ES);
+            $("#porcentaje_ext h3").html(
+              "Total población <br><small>" +
+                d3.format(",.0f")(total_habitantes) +
+                " personas</small>"
+            );
+            $("#porcentaje_pob h3").html(
+              "Distribución extranjeros <br><small>" +
+                d3.format(",.0f")(total_extranjeros) +
+                " personas</small>"
+            );
             datum1.push({
               label: "Nacionales",
               value: parseInt(municipio.Nacidos_ES)
