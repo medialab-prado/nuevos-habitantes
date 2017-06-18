@@ -442,6 +442,11 @@ body {
   .box-article li {
     text-align: left;
     font-family: "Merriweather", serif; }
+  .box-article small.autor {
+    display: block;
+    text-align: left;
+    padding-top: 0;
+    font-style: italic; }
 
 .section-container {
   max-width: 300px;
