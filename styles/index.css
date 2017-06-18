@@ -81,7 +81,7 @@ body {
 
 @media (min-width: 768px) {
   body {
-    background: url(../images/foto1.JPG);
+    background: url(../images/foto1.jpg);
     /* Nuestra imagen de fondo */
     background-repeat: no-repeat;
     /* Indicamos que no se repetira */
