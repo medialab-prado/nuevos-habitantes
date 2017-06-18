@@ -20,6 +20,12 @@
     text-align: left;
     font-family: $default-font-family-lowercase;
   }
+  small.autor {
+    display: block;
+    text-align: left;
+    padding-top: 0;
+    font-style: italic;
+  }
 }
 
 .section-container {
