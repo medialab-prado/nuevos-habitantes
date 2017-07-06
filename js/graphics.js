@@ -33,8 +33,6 @@ $(document).ready(function() {
         placeholder: "Nombre municipio"
       });
       $("#municipio").on("change", function(e) {
-        console.log(e);
-        console.log($(e.target).val());
         $(".pie").show();
         $(".footer").show();
         $(".loader").hide();
