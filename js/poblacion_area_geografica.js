@@ -1,4 +1,5 @@
 jQuery(document).ready(function() {
+  var root = [];
   var format = d3.format(",d");
 
   var color = d3.scaleOrdinal().range(
@@ -45,8 +46,10 @@ jQuery(document).ready(function() {
   }
 
   function setUpGraph(el, root) {
-    var svg = d3.select("#" + el);
-    (width = +svg.attr("width")), (height = +svg.attr("height"));
+    var container = d3.select("#" + el),
+      svg = d3.select("#" + el + " > svg"),
+      width = +container.attr("width"),
+      height = +container.attr("height");
 
     var main = document.getElementById(el);
     width = isNaN(width)
@@ -55,10 +58,17 @@ jQuery(document).ready(function() {
 
     var tile = d3.treemapResquarify;
     var data = root.leaves();
-    if (width < 640) {
+    if (width < 720) {
       data = root.children;
       tile = d3.treemapSliceDice;
     }
+    if (width < 420) {
+      tile = d3.treemapSlice;
+      height = 250;
+    }
+
+    svg.attr("width", width).attr("height", height);
+    svg.selectAll("a").remove();
     var treemap = d3.treemap().size([width, height]).padding(1).tile(tile);
     //.round(true);
     treemap(root);
@@ -87,13 +97,6 @@ jQuery(document).ready(function() {
         var a = d.ancestors();
         return color(a[a.length - 2].id);
       });
-
-    /*
-    cell.append("clipPath")
-    .attr("id", function(d) { return "clip-" + d.id; })
-    .append("use")
-    .attr("xlink:href", function(d) { return "#" + d.id; });
-    */
 
     var label = cell.append("text").attr("clip-path", function(d) {
       return "url(#clip-" + d.id + ")";
@@ -139,7 +142,7 @@ jQuery(document).ready(function() {
     function(error, data) {
       if (error) throw error;
 
-      var root = stratify(data)
+      root = stratify(data)
         .sum(function(d) {
           return d.numero_personas;
         })
@@ -150,4 +153,8 @@ jQuery(document).ready(function() {
       setUpGraph("pob-geo-mobile", root);
     }
   );
+  $(window).resize(function() {
+    setUpGraph("pob-geo-desktop", root);
+    setUpGraph("pob-geo-mobile", root);
+  });
 });
