@@ -19,16 +19,10 @@ $(document).ready(function() {
 
 $(document).ready(function() {
   if ($("#municipio").length > 0) {
-    var municipios = [];
     var dsv = d3.dsv(";", "text/plain");
 
     dsv("data/2016.csv", function(err, data) {
-      data.forEach(function(mun) {
-        municipios.push({ id: mun.Cod, text: mun.Municipio });
-      });
-
       $("#municipio").select2({
-        data: municipios,
         width: 300,
         placeholder: "Nombre municipio"
       });
