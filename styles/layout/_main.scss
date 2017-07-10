@@ -86,6 +86,12 @@ input {
   .loader{
     height: 300px;
   }
+  .mobile{
+    display:none;
+  }
+}
+.mobile{
+  display:none;
 }
 .town {
   display: inline-block;
@@ -136,5 +142,21 @@ input {
     z-index: 0;
     margin-bottom: 50px;
   }
-
+}
+@media (max-width:767px){
+  .desktop{
+    display:none;
+  }
+  .mobile{
+    display: inline-block;
+  }
+  .viz{
+    margin:0;
+    .desktop{
+      display:none;
+    }
+    .mobile{
+      display: block;
+    }
+  }
 }
